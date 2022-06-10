@@ -105,7 +105,7 @@ def map_input(bltitle, iteration, stopwords):
         size = np.size(data) - size
         n += 1
 
-    return data, arc
+    return data, np.array(arc).astype(np.float32)
 
 def merge_map_input(bltitles, iteration, stopwords):
 
@@ -123,15 +123,16 @@ def merge_map_input(bltitles, iteration, stopwords):
                 data0.append(title)
 
         for arc in arc1:
-            arc[0] = change[arc[0]]
-            arc[1] = change[arc[1]]
+            arc[0] = change[arc[0].astype(np.int32)]
+            arc[1] = change[arc[1].astype(np.int32)]
 
-            if arc in arc0:
-                print("yep") #what happen if duplicates / change weight
+            if (arc[:2] == arc0[:,:2]).all(1).any() == True:
+                indice = np.where((arc[:2] == arc0[:,:2]).all(1))[0][0]
+                arc0[indice][2] += 0.5                                          #Define what weight to add
             else:
-                arc0.append(arc)
+                arc0 = np.append(arc0, [arc], axis=0)
 
-    arc0.sort()
+    arc0 = arc0[arc0[:,0].argsort()]
     return data0, arc0
 
 def writeData(data, arc, filename):
@@ -149,7 +150,7 @@ def writeData(data, arc, filename):
     f.write("# source target [weight] " + "\n")
 
     for i in range(len(arc)-1):
-        f.write(str(arc[i][0]) + " " + str(arc[i][1]) + " " + str(arc[i][2]) + "\n")
-    f.write(str(arc[-1][0]) + " " + str(arc[-1][1]) + " " + str(arc[-1][2]))
+        f.write(str(arc[i][0].astype(np.int32)) + " " + str(arc[i][1].astype(np.int32)) + " " + str(arc[i][2]) + "\n")
+    f.write(str(arc[-1][0].astype(np.int32)) + " " + str(arc[-1][1].astype(np.int32)) + " " + str(arc[-1][2]))
 
     f.close()
