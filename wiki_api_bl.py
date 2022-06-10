@@ -96,7 +96,7 @@ def map_input(bltitle, iteration, stopwords):
                     if not lk.replace(" ", "_") in data:
                         data.append(lk.replace("\"", "\'"))
                     if data.index(lk) != i: 
-                        arc.append([data.index(lk), i])   
+                        arc.append([data.index(lk), i, 1])   
 
             except:
                 print("erreur")
@@ -149,7 +149,7 @@ def writeData(data, arc, filename):
     f.write("# source target [weight] " + "\n")
 
     for i in range(len(arc)-1):
-        f.write(str(arc[i][0]) + " " + str(arc[i][1]) + "\n")
-    f.write(str(arc[-1][0]) + " " + str(arc[-1][1]))
+        f.write(str(arc[i][0]) + " " + str(arc[i][1]) + " " + str(arc[i][2]) + "\n")
+    f.write(str(arc[-1][0]) + " " + str(arc[-1][1]) + " " + str(arc[-1][2]))
 
     f.close()
