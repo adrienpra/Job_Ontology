@@ -146,8 +146,8 @@ def writeData(data, arc, filename):
     for i in data:
         f.write(str(data.index(i)) + " \"{}\"".format(i) + "\n")
 
-    f.write("*Edges " + str(len(arc)) + "\n")
-    f.write("# source target [weight] " + "\n")
+    f.write("*Arcs " + str(len(arc)) + "\n")
+    f.write("# source target weight" + "\n")
 
     for i in range(len(arc)-1):
         f.write(str(arc[i][0].astype(np.int32)) + " " + str(arc[i][1].astype(np.int32)) + " " + str(arc[i][2]) + "\n")      #need to convert arc[0] and [1] to int 'cause nodes
