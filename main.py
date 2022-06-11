@@ -1,7 +1,7 @@
-from wiki_api_bl import map_input
-from wiki_api_bl import writeData
 from wiki_api_bl import read_file
+from wiki_api_bl import map_input
 from wiki_api_bl import merge_map_input
+from wiki_api_bl import writeData
 
 import time
 
