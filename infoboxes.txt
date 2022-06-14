@@ -307,22 +307,6 @@ Infobox archaeological culture
 Infobox Confederate State ACW
 Infobox historical era
 Infobox year in country
-Infobox code
-Infobox control chart
-Infobox data structure
-Infobox encryption method
-Infobox equilibrium
-Infobox graph
-Infobox integer sequence
-Infobox mathematical function
-Infobox mathematical statement
-Infobox molecular geometry
-Infobox number
-Infobox polychoron
-Infobox polygon
-Infobox polyhedron
-Infobox probability distribution
-Infobox quality tool
 Infobox Buddha
 Infobox Christian leader
 Infobox clergy
@@ -790,7 +774,6 @@ Infobox agricultural production
 Infobox brand
 Infobox certification mark
 Infobox company
-Infobox website
 Infobox economy
 Infobox electricity sector
 Infobox exchange
@@ -798,11 +781,7 @@ Infobox financial index
 Infobox fishery
 Infobox interbank network
 Infobox livery company
-Infobox mining
-Infobox network service provider
 Infobox online service
-Infobox product
-Infobox project
 Infobox record label
 Infobox whisky distillery
 Infobox education by place
@@ -1489,74 +1468,12 @@ Infobox shipping job
 Infobox tribe
 Infobox waka
 Infobox women by region
-Infobox calculator
-Infobox chipset
-Infobox computer hardware
-Infobox computer hardware bus
-Infobox CPU
-Infobox CPU architecture
-Infobox CPU socket
-Infobox custom computer
-Infobox graphics processing unit
-Infobox information appliance
-Infobox keyboard
-Infobox algorithm
-Infobox character encoding
-Infobox computer virus
-Infobox distributed computing project
-Infobox fieldbus protocol
-Infobox file format
-Infobox file system
-Infobox networking protocol
-Infobox OS
-Infobox software
-Infobox software licence
-Infobox software platform
-Infobox web browser
-Infobox Internet exchange point
-Infobox IRC network
-Infobox programming language
-Infobox protocol
-Infobox technology standard
-Infobox top level domain
-Infobox Unicode block
-Infobox wifi network
 Infobox camera
 Infobox camera mount
 Infobox lens design
 Infobox movie camera
 Infobox photographic film
 Infobox photographic lens
-Infobox Audio over Ethernet technology
-Infobox battery
-Infobox cable
-Infobox combat robot
-Infobox connector
-Infobox country telephone plan
-Infobox DAB ensemble
-Infobox diving equipment
-Infobox electronic component
-Infobox electronic payment
-Infobox historic engine
-Infobox identifier
-Infobox industrial process
-Infobox irrigation
-Infobox laboratory equipment
-Infobox machine
-Infobox mobile phone
-Infobox night vision device
-Infobox radar
-Infobox reactor
-Infobox robot
-Infobox storage medium
-Infobox submarine communications cable
-Infobox synthesizer
-Infobox telecommunications network
-Infobox telescope
-Infobox telephone area code
-Infobox tool
-Infobox vacuum tube
-Infobox watch
 Infobox body of water/See
 Infobox company/Unternehmen
 Infobox dam/Stausee

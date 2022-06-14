@@ -20,11 +20,12 @@ if __name__=="__main__":
     tps_start = time.time()
 
     stopwords = read_file("stopwords.txt")
+    infoboxes = read_file("infoboxes.txt")
 
     if len(titles) == 1:
-        data, arc = map_input(titles[0], iteration, stopwords)      #One search
+        data, arc = map_input(titles[0], iteration, stopwords, infoboxes)      #One search
     else:
-        data, arc = merge_map_input(titles, iteration, stopwords)   #Multiple searches
+        data, arc = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
 
     writeData(data, arc, filename)
     tps_end = time.time()

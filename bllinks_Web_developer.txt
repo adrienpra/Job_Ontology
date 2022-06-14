@@ -1,0 +1,173 @@
+*Vertices 85
+# node_id name 85
+0 "Web_developer"
+1 "Document_Object_Model"
+2 "Graphic_design"
+3 "HTML"
+4 "Hypertext_Transfer_Protocol"
+5 "Web_design"
+6 "Mornington_Crescent_(game)"
+7 "Startup_company"
+8 "Annabel_Chong"
+9 "Developer"
+10 "Personalized_marketing"
+11 "Education_in_Canada"
+12 "Webmaster"
+13 "Browser_wars"
+14 "IWD"
+15 "Web_development"
+16 "Holland_Codes"
+17 "Pay-per-click"
+18 "Web_engineering"
+19 "Sakai_(software)"
+20 "TinyURL"
+21 "OpenID"
+22 "Apache_Velocity"
+23 "Page_layout"
+24 "Alt_attribute"
+25 "Scott_Yanoff"
+26 "Landing_page"
+27 "Web_content_development"
+28 "Content_designer"
+29 "Design_education"
+30 "Windows_CardSpace"
+31 "Session_hijacking"
+32 "Google_Web_Toolkit"
+33 "ColorZilla"
+34 "Web_accessibility_initiatives_in_the_Philippines"
+35 "Spry_framework"
+36 "ArcGIS_Server"
+37 "Benjamin_Cohen_(journalist)"
+38 "Unobtrusive_JavaScript"
+39 "HyperEdit"
+40 "Web_Developer_(software)"
+41 "Professional_liability_insurance"
+42 "The_Game_of_Life:_Twists_&_Turns"
+43 "Big_Medium"
+44 "Philippine_Society_of_Information_Technology_Educators"
+45 "Rix_Centre"
+46 "Version_targeting"
+47 "Google_Chrome"
+48 "Yehuda_Moon_and_the_Kickstand_Cyclery"
+49 "Adobe_Contribute"
+50 "British_Comedy_Guide"
+51 "Use_of_Ogg_formats_in_HTML5"
+52 "Google_Closure_Tools"
+53 "HTML5_video"
+54 "Node.js"
+55 "Compare++"
+56 "Chief_web_officer"
+57 "Jesus_Barraza"
+58 "Web_development_tools"
+59 "Web2py"
+60 "MoSync"
+61 "Web_performance"
+62 "Sencha_Touch"
+63 "Jualo.com"
+64 "Google_Lighthouse"
+65 "GiveCamp"
+66 "Technology_specialist"
+67 "Bilibili"
+68 "Outline_of_software_development"
+69 "Fathom.com"
+70 "WebSharper"
+71 "Web_Techniques"
+72 "Springloops"
+73 "Velocity_(JavaScript_library)"
+74 "Spinlister"
+75 "Doge_Weather"
+76 "JSFiddle"
+77 "CSS_grid_layout"
+78 ".dev"
+79 "Nathan_Amanquah"
+80 "YIFY"
+81 "Outline_of_web_design_and_web_development"
+82 "Chart.js"
+83 "Autcraft"
+84 "Headless_commerce"
+*Arcs 84
+# source target weight
+1 0 1.0
+2 0 1.0
+3 0 1.0
+4 0 1.0
+5 0 1.0
+6 0 1.0
+7 0 1.0
+8 0 1.0
+9 0 1.0
+10 0 1.0
+11 0 1.0
+12 0 1.0
+13 0 1.0
+14 0 1.0
+15 0 1.0
+16 0 1.0
+17 0 1.0
+18 0 1.0
+19 0 1.0
+20 0 1.0
+21 0 1.0
+22 0 1.0
+23 0 1.0
+24 0 1.0
+25 0 1.0
+26 0 1.0
+27 0 1.0
+28 0 1.0
+29 0 1.0
+30 0 1.0
+31 0 1.0
+32 0 1.0
+33 0 1.0
+34 0 1.0
+35 0 1.0
+36 0 1.0
+37 0 1.0
+38 0 1.0
+39 0 1.0
+40 0 1.0
+41 0 1.0
+42 0 1.0
+43 0 1.0
+44 0 1.0
+45 0 1.0
+46 0 1.0
+47 0 1.0
+48 0 1.0
+49 0 1.0
+50 0 1.0
+51 0 1.0
+52 0 1.0
+53 0 1.0
+54 0 1.0
+55 0 1.0
+56 0 1.0
+57 0 1.0
+58 0 1.0
+59 0 1.0
+60 0 1.0
+61 0 1.0
+62 0 1.0
+63 0 1.0
+64 0 1.0
+65 0 1.0
+66 0 1.0
+67 0 1.0
+68 0 1.0
+69 0 1.0
+70 0 1.0
+71 0 1.0
+72 0 1.0
+73 0 1.0
+74 0 1.0
+75 0 1.0
+76 0 1.0
+77 0 1.0
+78 0 1.0
+79 0 1.0
+80 0 1.0
+81 0 1.0
+82 0 1.0
+83 0 1.0
+84 0 1.0

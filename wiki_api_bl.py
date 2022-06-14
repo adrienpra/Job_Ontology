@@ -4,7 +4,7 @@ import re
 import os
 
 class Pagelinks_bl:
-    def __init__(self, title, stopwords):
+    def __init__(self, title, stopwords, infoboxes):
         self.URL = "https://en.wikipedia.org/w/api.php"
         self.PARAMS = {
             "action": "query",
@@ -18,6 +18,7 @@ class Pagelinks_bl:
         self.links = []
         self.DATA = []
         self.stopwords = stopwords
+        self.infoboxes = infoboxes
 
     def main(Pagelinks_bl):
         Pagelinks_bl.readData()
@@ -62,8 +63,53 @@ class Pagelinks_bl:
         check_stpwrd = bool([x for x in Pagelinks_bl.stopwords if re.search(x.replace(" ","_").lower(), title.lower())]) #False
         check_dic = bool(title in Pagelinks_bl.links) #False
 
-        check = check_art and not check_stpwrd and not check_dic
+        main = Page_infobox(title)
+        main.main()
+        infobox = main.infobox
+        check_infobox = bool([x for x in Pagelinks_bl.infoboxes if re.match(x, infobox)])  #False
+
+        check = check_art and not check_stpwrd and not check_dic and not check_infobox
         return check #should return True
+
+class Page_infobox:
+    def __init__(self, title):
+        self.URL = "https://en.wikipedia.org/w/api.php"
+        self.PARAMS = {
+            "action": "query",
+            "format": "json",
+            "prop": "revisions",
+            "rvprop": "content",
+            "titles": title
+        }
+        self.PAGES = []
+        self.DATA = []
+        self.infobox = ""
+
+    def main(Page_infobox):
+        Page_infobox.readData()
+        Page_infobox.getData()
+
+    def readData(Page_infobox):
+        S = requests.Session()
+        R = S.get(url= Page_infobox.URL, params= Page_infobox.PARAMS)
+        Page_infobox.DATA = R.json()
+        pages = Page_infobox.DATA["query"]["pages"]
+        pageId = list(pages.items())[0][0]
+        Page_infobox.PAGES = Page_infobox.DATA["query"]["pages"][pageId]["revisions"][0]["*"]
+    
+    def getData(Page_infobox):
+        content = Page_infobox.PAGES
+        try:
+            test = re.search("{{Infobox", content)
+            index = content.index("{{Infobox")
+
+            content2 = content[index:]
+            index2 = content2.index("\n")
+
+            Page_infobox.infobox = content2[2:index2]
+
+        except:
+            pass
 
 #Read file function: input:filename (1 colonne, no punct) / output array (n,1)
 def read_file(filename):
@@ -75,7 +121,7 @@ def read_file(filename):
 
     return file
 
-def map_input(bltitle, iteration, stopwords):
+def map_input(bltitle, iteration, stopwords, infoboxes):
     arc = []
     data = []
     data.append(bltitle)
@@ -88,7 +134,7 @@ def map_input(bltitle, iteration, stopwords):
         for i in range(start, size):
             try:
                 bltitle = data[i].replace(" ", "_")
-                new_links = Pagelinks_bl(bltitle, stopwords)
+                new_links = Pagelinks_bl(bltitle, stopwords, infoboxes)
                 new_links.main()
                 new_data = new_links.links
 
@@ -107,13 +153,13 @@ def map_input(bltitle, iteration, stopwords):
 
     return data, np.array(arc).astype(np.float32)                   #need to convert to np.array for edit weight (float to be flexible with weight val)
 
-def merge_map_input(bltitles, iteration, stopwords):
+def merge_map_input(bltitles, iteration, stopwords, infoboxes):
 
-    data0, arc0 = map_input(bltitles[0], iteration, stopwords)
+    data0, arc0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
 
     for bltitle in bltitles[1:]:
         change = []
-        data1, arc1 = map_input(bltitle, iteration, stopwords)
+        data1, arc1 = map_input(bltitle, iteration, stopwords, infoboxes)
 
         for title in data1:
             if title in data0:
