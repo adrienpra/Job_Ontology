@@ -23,9 +23,15 @@ if __name__=="__main__":
     infoboxes = read_file("infoboxes.txt")
 
     if len(titles) == 1:
-        data, arc = map_input(titles[0], iteration, stopwords, infoboxes)      #One search
+        data, arc, label = map_input(titles[0], iteration, stopwords, infoboxes)      #One search
     else:
-        data, arc = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
+        data, arc, label = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
+
+    print('hello world!')
+    print(data)
+    print(arc)
+    print(label)
+    print(len(label))
 
     writeData(data, arc, filename)
     tps_end = time.time()

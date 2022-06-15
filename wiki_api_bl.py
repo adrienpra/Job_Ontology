@@ -19,6 +19,7 @@ class Pagelinks_bl:
         self.DATA = []
         self.stopwords = stopwords
         self.infoboxes = infoboxes
+        self.infobox = []
 
     def main(Pagelinks_bl):
         Pagelinks_bl.readData()
@@ -41,13 +42,23 @@ class Pagelinks_bl:
                     for d in c:
                         if Pagelinks_bl.check(d["ns"], d["title"].replace(" ", "_")) == True:
                             Pagelinks_bl.links.append(d["title"].replace(" ", "_"))
-                            print(b["title"])
+                            print(d["title"])
+
+                            main = Page_infobox(d["title"])
+                            main.main()
+                            infobox = main.infobox
+                            Pagelinks_bl.infobox.append(infobox)
                 except:
                     pass
             except:
                 if Pagelinks_bl.check(b["ns"], b["title"].replace(" ", "_")) == True:
                     Pagelinks_bl.links.append(b["title"].replace(" ", "_"))
                     print(b["title"])
+
+                    main = Page_infobox(b["title"])
+                    main.main()
+                    infobox = main.infobox
+                    Pagelinks_bl.infobox.append(infobox)
                 else:
                     print("nop")
 
@@ -66,10 +77,10 @@ class Pagelinks_bl:
         main = Page_infobox(title)
         main.main()
         infobox = main.infobox
-        check_infobox = bool([x for x in Pagelinks_bl.infoboxes if re.match(x, infobox)])  #False
+        check_infobox = bool([x for x in Pagelinks_bl.infoboxes if re.match(x, infobox)])   #False
 
         check = check_art and not check_stpwrd and not check_dic and not check_infobox
-        return check #should return True
+        return check        #should return True
 
 class Page_infobox:
     def __init__(self, title):
@@ -102,10 +113,11 @@ class Page_infobox:
         try:
             index = content.index("{{Infobox")
             content2 = content[index:]
-            index2 = content2.index("\n")
-
-            Page_infobox.infobox = content2[2:index2]
-
+            index2 = content2.index("|")                            #{{Infobox __template_name__\n| sometimes not \n so need to check to only keep Infobox __template_name__
+            if content2[index2-1:index2] == "\n":
+                Page_infobox.infobox = content2[2:index2-1]
+            else:
+                Page_infobox.infobox = content2[2:index2]
         except:
             pass
 
@@ -123,6 +135,12 @@ def map_input(bltitle, iteration, stopwords, infoboxes):
     arc = []
     data = []
     data.append(bltitle)
+    label = []
+
+    main = Page_infobox(bltitle)
+    main.main()
+    infobox = main.infobox
+    label.append(infobox)
 
     n = 0
     start = 0
@@ -135,12 +153,16 @@ def map_input(bltitle, iteration, stopwords, infoboxes):
                 new_links = Pagelinks_bl(bltitle, stopwords, infoboxes)
                 new_links.main()
                 new_data = new_links.links
+                test = new_links.infobox
 
                 for lk in new_data:
                     if not lk.replace(" ", "_") in data:
                         data.append(lk.replace("\"", "\'"))
+                        indice = new_data.index(lk)
+                        label.append(test[indice])
+                        print("yep")
                     if data.index(lk) != i: 
-                        arc.append([data.index(lk), i, 1])   
+                        arc.append([data.index(lk), i, 1])
 
             except:
                 print("erreur")
@@ -149,15 +171,15 @@ def map_input(bltitle, iteration, stopwords, infoboxes):
         size = np.size(data) - size
         n += 1
 
-    return data, np.array(arc).astype(np.float32)                   #need to convert to np.array for edit weight (float to be flexible with weight val)
+    return data, np.array(arc).astype(np.float32), label                   #need to convert to np.array for edit weight (float to be flexible with weight val)
 
 def merge_map_input(bltitles, iteration, stopwords, infoboxes):
 
-    data0, arc0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
+    data0, arc0, label0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
 
     for bltitle in bltitles[1:]:
         change = []
-        data1, arc1 = map_input(bltitle, iteration, stopwords, infoboxes)
+        data1, arc1, label1 = map_input(bltitle, iteration, stopwords, infoboxes)
 
         for title in data1:
             if title in data0:
@@ -165,6 +187,7 @@ def merge_map_input(bltitles, iteration, stopwords, infoboxes):
             else:
                 change.append(len(data0))
                 data0.append(title)
+                label0.append(label1[data1.index(title)])
 
         for arc in arc1:
             arc[0] = change[arc[0].astype(np.int32)]                    #array index must be int not float
@@ -177,7 +200,7 @@ def merge_map_input(bltitles, iteration, stopwords, infoboxes):
                 arc0 = np.append(arc0, [arc], axis=0)                           #else not already exist then append it
 
     arc0 = arc0[arc0[:,0].argsort()]                                            #sort arc0 output through first column
-    return data0, arc0
+    return data0, arc0, label0
 
 def writeData(data, arc, filename):
     __location__ = os.path.realpath(
