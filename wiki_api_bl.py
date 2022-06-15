@@ -100,9 +100,7 @@ class Page_infobox:
     def getData(Page_infobox):
         content = Page_infobox.PAGES
         try:
-            test = re.search("{{Infobox", content)
             index = content.index("{{Infobox")
-
             content2 = content[index:]
             index2 = content2.index("\n")
 
