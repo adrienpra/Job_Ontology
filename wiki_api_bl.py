@@ -107,7 +107,7 @@ class Page_infobox:
         pages = Page_infobox.DATA["query"]["pages"]
         pageId = list(pages.items())[0][0]
         Page_infobox.PAGES = Page_infobox.DATA["query"]["pages"][pageId]["revisions"][0]["*"]
-    
+
     def getData(Page_infobox):
         content = Page_infobox.PAGES
         try:
