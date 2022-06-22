@@ -78,7 +78,7 @@ class Pagelinks_bl:
         main = Page_infobox(title)
         main.main()
         infobox = main.infobox
-        check_infobox = bool([x for x in Pagelinks_bl.infoboxes if re.match(x, infobox)])   #False
+        check_infobox = bool([x for x in Pagelinks_bl.infoboxes if re.match(x[8:].lower(), infobox[8:].lower())])   #False
 
         check = check_art and not check_stpwrd and not check_dic and not check_infobox
         return check        #should return True
