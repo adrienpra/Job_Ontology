@@ -2,6 +2,7 @@ import numpy as np
 import requests
 import re
 import os
+#import time
 
 class Pagelinks_bl:
     def __init__(self, title, stopwords, infoboxes):
@@ -202,7 +203,7 @@ def merge_map_input(bltitles, iteration, stopwords, infoboxes):
     arc0 = arc0[arc0[:,0].argsort()]                                            #sort arc0 output through first column
     return data0, arc0, label0
 
-def writeData(data, arc, filename):
+def writeData(data, arc, labels, filename):
     __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -221,3 +222,8 @@ def writeData(data, arc, filename):
     f.write(str(arc[-1][0].astype(np.int32)) + " " + str(arc[-1][1].astype(np.int32)) + " " + str(arc[-1][2]))
 
     f.close()
+
+    f2 = open(os.path.join(__location__, "labels.txt"), "w", encoding="utf-8")
+    for label in labels:
+        f2.write(label + "\n")
+    f2.close()

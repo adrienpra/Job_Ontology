@@ -27,12 +27,7 @@ if __name__=="__main__":
     else:
         data, arc, label = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
 
-    print('hello world!')
-    print(data)
-    print(arc)
-    print(label)
-    print(len(label))
-
-    writeData(data, arc, filename)
+    writeData(data, arc, label, filename)
+    
     tps_end = time.time()
     print("tps =", tps_end - tps_start)
