@@ -174,34 +174,38 @@ def map_input(bltitle, iteration, stopwords, infoboxes):
 
     return data, np.array(arc).astype(np.float32), label                   #need to convert to np.array for edit weight (float to be flexible with weight val)
 
-def merge_map_input(bltitles, iteration, stopwords, infoboxes):
+def merge_map_input(data, arcs, labels):
 
-    data0, arc0, label0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
+    #data0, arc0, label0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
 
-    for bltitle in bltitles[1:]:
+    data = list(data)
+    arcs = list(arcs)
+    labels = list(labels)
+
+    for i in range(len(data)-1):
         change = []
-        data1, arc1, label1 = map_input(bltitle, iteration, stopwords, infoboxes)
+        #data1, arc1, label1 = map_input(bltitle, iteration, stopwords, infoboxes)
 
-        for title in data1:
-            if title in data0:
-                change.append(data0.index(title))
+        for title in data[i+1]:
+            if title in data[0]:
+                change.append(data[0].index(title))
             else:
-                change.append(len(data0))
-                data0.append(title)
-                label0.append(label1[data1.index(title)])
+                change.append(len(data[0]))
+                data[0].append(title)
+                labels[0].append(labels[i+1][data[i+1].index(title)])
 
-        for arc in arc1:
+        for arc in arcs[i+1]:
             arc[0] = change[arc[0].astype(np.int32)]                    #array index must be int not float
             arc[1] = change[arc[1].astype(np.int32)]
 
-            if (arc[:2] == arc0[:,:2]).all(1).any() == True:                    #if already exist arc statement : just look source target not weight
-                indice = np.where((arc[:2] == arc0[:,:2]).all(1))[0][0]             #Get index in arc0 where connection already exist to change it
-                arc0[indice][2] += 0.5                                              #Define what weight to add
+            if (arc[:2] == arcs[0][:,:2]).all(1).any() == True:                    #if already exist arc statement : just look source target not weight
+                indice = np.where((arc[:2] == arcs[0][:,:2]).all(1))[0][0]             #Get index in arc0 where connection already exist to change it
+                arcs[0][indice][2] += 0.5                                              #Define what weight to add
             else:
-                arc0 = np.append(arc0, [arc], axis=0)                           #else not already exist then append it
+                arcs[0] = np.append(arcs[0], [arc], axis=0)                           #else not already exist then append it
 
-    arc0 = arc0[arc0[:,0].argsort()]                                            #sort arc0 output through first column
-    return data0, arc0, label0
+    arcs[0] = arcs[0][arcs[0][:,0].argsort()]                                            #sort arc0 output through first column
+    return data[0], arcs[0], labels[0]
 
 def writeData(data, arc, labels, filename):
     __location__ = os.path.realpath(

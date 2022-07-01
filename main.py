@@ -3,6 +3,8 @@ from wiki_api_bl import map_input
 from wiki_api_bl import merge_map_input
 from wiki_api_bl import writeData
 
+import multiprocessing as mp
+from functools import partial
 import time
 
 #__inputs__
@@ -25,9 +27,15 @@ if __name__=="__main__":
     if len(titles) == 1:
         data, arc, label = map_input(titles[0], iteration, stopwords, infoboxes)      #One search
     else:
-        data, arc, label = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
-
+        print(titles)
+        p = mp.Pool()
+        result = p.map(partial(map_input, iteration=iteration, stopwords=stopwords, infoboxes=infoboxes), titles)
+        data, arc, label = zip(*result) #unzip result give tuples of array (n array for n titles)
+        #data, arc, label = merge_map_input(titles, iteration, stopwords, infoboxes)   #Multiple searches
+        data, arc, label = merge_map_input(data, arc, label)
+        
+    print(data)
     writeData(data, arc, label, filename)
-    
+
     tps_end = time.time()
     print("tps =", tps_end - tps_start)
