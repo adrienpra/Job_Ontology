@@ -1,129 +1,774 @@
-*Vertices 56
-# node_id name 56
-0 "Von_Mises_yield_criterion"
-1 "Plasticity_(physics)"
-2 "Strength_of_materials"
-3 "Structural_analysis"
-4 "Von_Mises"
-5 "Dislocation_creep"
-6 "Shear_strength"
-7 "Tytus_Maksymilian_Huber"
-8 "Padeye"
-9 "Yield_surface"
-10 "HMH"
-11 "T-criterion"
-12 "Mohr–Coulomb_theory"
-13 "Cauchy_stress_tensor"
-14 "Stress_space"
-15 "Drucker–Prager_yield_criterion"
-16 "Lode_coordinates"
-17 "Huber's_equation"
-18 "Critical_state_soil_mechanics"
-19 "Hill_yield_criterion"
-20 "Hosford_yield_criterion"
-21 "Viscoplasticity"
-22 "Material_failure_theory"
-23 "Structural_engineering_theory"
-24 "Heinrich_Hencky"
-25 "Christensen_failure_criterion"
-26 "Micro-mechanics_of_failure"
-27 "Yu_Mao-Hong"
-28 "Load_path_analysis"
-29 "Stress_triaxiality"
-30 "Bigoni–Piccolroaz_yield_criterion"
-31 "Equation_of_state"
-32 "Navier–Stokes_equations"
-33 "Bernoulli's_principle"
-34 "Capillary_action"
-35 "Elasticity_(physics)"
-36 "Fracture_mechanics"
-37 "Bending"
-38 "Transverse_isotropy"
-39 "Yield_(engineering)"
-40 "Orthotropic_material"
-41 "J-integral"
-42 "Contact_mechanics"
-43 "Shear_strength_(soil)"
-44 "Lankford_coefficient"
-45 "Bresler–Pister_yield_criterion"
-46 "Willam–Warnke_yield_criterion"
-47 "Interval_finite_element"
-48 "Hoek–Brown_failure_criterion"
-49 "Frictional_contact_mechanics"
-50 "Compaction_of_ceramic_powders"
-51 "Rock_mass_plasticity"
-52 "Flow_plasticity_theory"
-53 "Ratcheting"
-54 "Computational_materials_science"
-55 "Unified_strength_theory"
-*Arcs 69
+*Vertices 384
+# node_id name 384
+0 "Web_developer"
+1 "Document_Object_Model"
+2 "Graphic_design"
+3 "HTML"
+4 "Hypertext_Transfer_Protocol"
+5 "Web_design"
+6 "Mornington_Crescent_(game)"
+7 "Startup_company"
+8 "Annabel_Chong"
+9 "Developer"
+10 "Personalized_marketing"
+11 "Education_in_Canada"
+12 "Webmaster"
+13 "Browser_wars"
+14 "IWD"
+15 "Web_development"
+16 "Holland_Codes"
+17 "Pay-per-click"
+18 "Web_engineering"
+19 "Sakai_(software)"
+20 "TinyURL"
+21 "OpenID"
+22 "Apache_Velocity"
+23 "Page_layout"
+24 "Alt_attribute"
+25 "Scott_Yanoff"
+26 "Landing_page"
+27 "Web_content_development"
+28 "Content_designer"
+29 "Design_education"
+30 "Windows_CardSpace"
+31 "Session_hijacking"
+32 "Google_Web_Toolkit"
+33 "ColorZilla"
+34 "Web_accessibility_initiatives_in_the_Philippines"
+35 "Spry_framework"
+36 "ArcGIS_Server"
+37 "Benjamin_Cohen_(journalist)"
+38 "Unobtrusive_JavaScript"
+39 "HyperEdit"
+40 "Web_Developer_(software)"
+41 "Professional_liability_insurance"
+42 "Big_Medium"
+43 "Rix_Centre"
+44 "Version_targeting"
+45 "Google_Chrome"
+46 "Yehuda_Moon_and_the_Kickstand_Cyclery"
+47 "Adobe_Contribute"
+48 "British_Comedy_Guide"
+49 "Use_of_Ogg_formats_in_HTML5"
+50 "Google_Closure_Tools"
+51 "HTML5_video"
+52 "Node.js"
+53 "Compare++"
+54 "Chief_web_officer"
+55 "Jesus_Barraza"
+56 "Web_development_tools"
+57 "Web2py"
+58 "MoSync"
+59 "Web_performance"
+60 "Sencha_Touch"
+61 "Jualo.com"
+62 "Google_Lighthouse"
+63 "GiveCamp"
+64 "Technology_specialist"
+65 "Bilibili"
+66 "Outline_of_software_development"
+67 "Fathom.com"
+68 "WebSharper"
+69 "Springloops"
+70 "Velocity_(JavaScript_library)"
+71 "Spinlister"
+72 "Doge_Weather"
+73 "JSFiddle"
+74 "CSS_grid_layout"
+75 ".dev"
+76 "Nathan_Amanquah"
+77 "YIFY"
+78 "Outline_of_web_design_and_web_development"
+79 "Chart.js"
+80 "Autcraft"
+81 "Headless_commerce"
+82 "Front-end_web_development"
+83 "Light-on-dark_color_scheme"
+84 "Frontend_and_backend"
+85 "Front_end"
+86 "Fed"
+87 "Comparison_of_JavaScript-based_web_frameworks"
+88 "Artist's_portfolio"
+89 "Go_(programming_language)"
+90 "Bootstrap_(front-end_framework)"
+91 "ISkeleton_Framework"
+92 "Front-end_engineering"
+93 "October_(CMS)"
+94 "Gulp.js"
+95 "Headless_content_management_system"
+96 "Hoodie_(software)"
+97 "VisBug"
+98 "Shirley_Wu"
+99 "Rumeysa_Gelgi"
+100 "Data_science"
+101 "Computing"
+102 "Computer_science"
+103 "Data_warehouse"
+104 "Data_compression"
+105 "Gigabyte"
+106 "Literate_programming"
+107 "Organized_crime"
+108 "Statistics"
+109 "Data_storage"
+110 "Data_integrity"
+111 "Data_mining"
+112 "Operations_research"
+113 "Statistician"
+114 "Knowledge_management"
+115 "Computational_biology"
+116 "Information_science"
+117 "Data_acquisition"
+118 "Buzzword"
+119 "Behavioral_economics"
+120 "Public_library"
+121 "Third_normal_form"
+122 "Machine_learning"
+123 "Information_design"
+124 "Information_privacy"
+125 "Extract,_transform,_load"
+126 "Opinion_poll"
+127 "Archive"
+128 "Health_informatics"
+129 "Data_degradation"
+130 "R_(programming_language)"
+131 "Bachelor_of_Business_Administration"
+132 "Exploratory_data_analysis"
+133 "DS"
+134 "Information_management"
+135 "Geomatics"
+136 "Computer_science_and_engineering"
+137 "Psephology"
+138 "Backward_chaining"
+139 "Data_management"
+140 "Infographic"
+141 "Data_corruption"
+142 "Data_migration"
+143 "Data_security"
+144 "Data_loss"
+145 "Business_analyst"
+146 "Data_quality"
+147 "Data_validation"
+148 "Geographic_information_science"
+149 "Citizen_science"
+150 "Data_recovery"
+151 "Law_library"
+152 "Data_(computing)"
+153 "Medical_library"
+154 "Chief_data_officer"
+155 "Color_scheme"
+156 "Private_library"
+157 "Data_archaeology"
+158 "Data_farming"
+159 "Data_analysis"
+160 "Data_retention"
+161 "Cataloging_(library_science)"
+162 "Master_of_Library_and_Information_Science"
+163 "Product_manager"
+164 "Outline_of_library_science"
+165 "Data_and_information_visualization"
+166 "Data_cleansing"
+167 "Data_scrubbing"
+168 "Formal_science"
+169 "Memetic_algorithm"
+170 "Phenomics"
+171 "Master_of_Economics"
+172 "School_library"
+173 "Data_integration"
+174 "Structure_mining"
+175 "Data_library"
+176 "Pakistan_Institute_of_Nuclear_Science_&_Technology"
+177 "RapidMiner"
+178 "Data_steward"
+179 "Process_mining"
+180 "Transportation_forecasting"
+181 "Spatiotemporal_database"
+182 "Academic_library"
+183 "Data_fusion"
+184 "Economics_education"
+185 "Master_of_Quantitative_Finance"
+186 "Computational_engineering"
+187 "Data_format_management"
+188 "Preservation_(library_and_archive)"
+189 "World_Programming_System"
+190 "Information_school"
+191 "Branches_of_science"
+192 "Data_pre-processing"
+193 "Data_wrangling"
+194 "Novelty_detection"
+195 "Special_library"
+196 "Computational_statistics"
+197 "Statistical_graphics"
+198 "Fractal_analysis"
+199 "Data"
+200 "Information"
+201 "Political_forecasting"
+202 "Health_information_technology"
+203 "Master_of_Finance"
+204 "Decision_intelligence"
+205 "Collective_intelligence"
+206 "Cultural_analytics"
+207 "Chief_Technology_Officer_of_the_United_States"
+208 "Information_governance"
+209 "Industrial_engineering"
+210 "MEASURE_Evaluation"
+211 "Data_reduction"
+212 "Professional_Science_Master's_Degree"
+213 "Data_curation"
+214 "Informatics"
+215 "Informatics_(disambiguation)"
+216 "Applied_mathematics"
+217 "Synthetic_data"
+218 "Wisconsin_Institute_for_Discovery"
+219 "Computational_journalism"
+220 "Mathematical_sciences"
+221 "AddThis"
+222 "Economy_of_Columbus,_Ohio"
+223 "Addictive_personality"
+224 "Big_data"
+225 "Information_capital"
+226 "ELKI"
+227 "Astroinformatics"
+228 "Quantitative_analysis_(finance)"
+229 "Eudaemons"
+230 "Rexer's_Annual_Data_Miner_Survey"
+231 "PyCharm"
+232 "Mike_Develin"
+233 "Information_history"
+234 "LinkCycle"
+235 "Forward_chaining"
+236 "Data-driven"
+237 "Scenario_optimization"
+238 "SyndicateRoom"
+239 "ScribbleLive"
+240 "Operating_partner"
+241 "Coursera"
+242 "APL_(programming_language)"
+243 "Business_intelligence"
+244 "Outline_of_computer_science"
+245 "1961_in_science"
+246 "Regeneron_Science_Talent_Search"
+247 "There_are_known_knowns"
+248 "E-research"
+249 "Sunny_Mehta"
+250 "Master_of_Science_in_Information_Technology"
+251 "Scikit-learn"
+252 "Banjo_(application)"
+253 "David_Paulides"
+254 "Gregory_Piatetsky-Shapiro"
+255 "Jeff_Hammerbacher"
+256 "Dirk_Eddelbuettel"
+257 "David_Cournapeau"
+258 "Ashok_Srivastava"
+259 "Emily_Gorcenski"
+260 "Roy_David_Williams"
+261 "Jen_Lowe"
+262 "Misleading_graph"
+263 "ORCA_(computer_system)"
+264 "Pipeline_Pilot"
+265 "Jens_Nordvig"
+266 "Eureqa"
+267 "Envirome"
+268 "Data_literacy"
+269 "T-distributed_stochastic_neighbor_embedding"
+270 "Data_thinking"
+271 "Jaffray_Woodriff"
+272 "Elections_in_Haryana"
+273 "Datafication"
+274 "Collections_management"
+275 "Data_publishing"
+276 "Data_editing"
+277 "Anaconda_(Python_distribution)"
+278 "Industrial_and_production_engineering"
+279 "Filter_(software)"
+280 "Data_exploration"
+281 "Continuous_analytics"
+282 "DataOps"
+283 "Illegal,_unreported_and_unregulated_fishing_in_the_Arctic"
+284 "Deforestation_and_climate_change"
+285 "Altmetric"
+286 "Media_intelligence"
+287 "Conda_(package_manager)"
+288 "William_S._Cleveland"
+289 "Stephanie_Singer"
+290 "Data_scraping"
+291 "Lighthouse_Labs"
+292 "Architect_(software)"
+293 "Chief_information_governance_officer"
+294 "Population_informatics"
+295 "Implied_volatility"
+296 "St._Xavier's_College,_Mumbai"
+297 "NEC_Laboratories_America"
+298 "QA_Ltd"
+299 "Apache_SystemDS"
+300 "ICAART"
+301 "California_Science_and_Technology_University"
+302 "Woz_U"
+303 "Australian_Laureate_Fellowship"
+304 "TechGig.com"
+305 "One_Fourth_Labs"
+306 "Metatron_Discovery"
+307 "Oliver_Zahn"
+308 "Business_Technology_Management"
+309 "Statsmodels"
+310 "Hannu_Toivonen_(professor)"
+311 "Digital_architect"
+312 "CyberGIS"
+313 "Coding_bootcamp"
+314 "Data_Science_Institute"
+315 "Longbing_Cao"
+316 "DataMeet"
+317 "Datascope_Analytics"
+318 "Patent_analysis"
+319 "Joint_Program_in_Survey_Methodology"
+320 "Frauke_Kreuter"
+321 "Information_oriented_software_development"
+322 "Intelligence_engine"
+323 "Data_augmentation"
+324 "Master_of_Science_in_Business_Analytics"
+325 "Big_memory"
+326 "Sethu_Vijayakumar"
+327 "Notebook_interface"
+328 "Azer_Bestavros"
+329 "Dat_(software)"
+330 "Metascience"
+331 "Social_profiling"
+332 "Data_preparation"
+333 "Data_blending"
+334 "Master_in_Data_Science"
+335 "MICrONS"
+336 "Kennedy_College_of_Sciences"
+337 "Cumulative_accuracy_profile"
+338 "Data_Science_Africa"
+339 "Documenting_Hate"
+340 "IBM_Watson_Studio"
+341 "IBM_Machine_Learning_Hub"
+342 "Data_culture"
+343 "Kathy_Ensor"
+344 "Data_preservation"
+345 "New-collar_worker"
+346 "Pricesearcher"
+347 "Data_science_competition_platform"
+348 "Archives_management"
+349 "Plate_Tectonics_Revolution"
+350 "Flatiron_School"
+351 "Rachel_Levy_(mathematician)"
+352 "Computational_psychometrics"
+353 "Voice_computing"
+354 "Argument_technology"
+355 "Kubeflow"
+356 "Augmented_Analytics"
+357 "Free_and_Open_Source_Software_Conference_India"
+358 "The_Center_of_Applied_Data_Science"
+359 "Rebecca_Willett"
+360 "Bridget_Boakye"
+361 "Petros_Drineas"
+362 "Russell_Viner"
+363 "ODSC"
+364 "Privacy_settings"
+365 "Galit_Shmueli"
+366 "Learning_engineering"
+367 "Wong_Ho-wa"
+368 "PolyAnalyst"
+369 "R_package"
+370 "FastAPI"
+371 "GPT-2"
+372 "Data_collaboratives"
+373 "Temiloluwa_Prioleau"
+374 "Nandini_Kannan"
+375 "VACUUM"
+376 "Hench_(novel)"
+377 "Sarah_Cohen-Boulakia"
+378 "Computational_audiology"
+379 "Aretha_Teckentrup"
+380 "Drift_(data_science)"
+381 "UniAthena"
+382 "Shaku_Atre"
+383 "Data_Management_Association"
+*Arcs 386
 # source target weight
-0 9 1.0
 1 0 1.0
-1 9 1.0
 2 0 1.0
 3 0 1.0
 4 0 1.0
 5 0 1.0
 6 0 1.0
-7 9 1.0
 7 0 1.0
 8 0 1.0
 9 0 1.0
 10 0 1.0
 11 0 1.0
 12 0 1.0
-12 9 1.0
 13 0 1.0
 14 0 1.0
 15 0 1.0
-15 9 1.0
-16 9 1.0
+15 82 1.0
 16 0 1.0
-17 9 1.0
 17 0 1.0
-18 9 1.0
 18 0 1.0
 19 0 1.0
 20 0 1.0
-20 9 1.0
-21 9 1.0
 21 0 1.0
 22 0 1.0
-22 9 1.0
 23 0 1.0
-23 9 1.0
 24 0 1.0
 25 0 1.0
 26 0 1.0
 27 0 1.0
-27 9 1.0
 28 0 1.0
 29 0 1.0
-30 9 1.0
 30 0 1.0
-31 9 1.0
-32 9 1.0
-33 9 1.0
-34 9 1.0
-35 9 1.0
-36 9 1.0
-37 9 1.0
-38 9 1.0
-39 9 1.0
-40 9 1.0
-41 9 1.0
-42 9 1.0
-43 9 1.0
-44 9 1.0
-45 9 1.0
-46 9 1.0
-47 9 1.0
-48 9 1.0
-49 9 1.0
-50 9 1.0
-51 9 1.0
-52 9 1.0
-53 9 1.0
-54 9 1.0
-55 9 1.0
+31 0 1.0
+32 0 1.0
+33 0 1.0
+34 0 1.0
+35 0 1.0
+36 0 1.0
+37 0 1.0
+38 0 1.0
+38 82 1.0
+39 0 1.0
+40 0 1.0
+41 0 1.0
+42 0 1.0
+43 0 1.0
+44 0 1.0
+45 0 1.0
+46 0 1.0
+47 0 1.0
+48 0 1.0
+49 0 1.0
+50 0 1.0
+51 0 1.0
+52 0 1.0
+53 0 1.0
+54 82 1.0
+54 0 1.0
+55 0 1.0
+56 0 1.0
+57 0 1.0
+58 0 1.0
+59 0 1.0
+60 0 1.0
+61 0 1.0
+62 0 1.0
+63 0 1.0
+64 0 1.0
+65 0 1.0
+66 0 1.0
+67 0 1.0
+68 0 1.0
+69 0 1.0
+70 0 1.0
+71 0 1.0
+72 0 1.0
+73 0 1.0
+74 0 1.0
+75 0 1.0
+76 0 1.0
+77 0 1.0
+78 82 1.0
+78 0 1.0
+79 0 1.0
+80 0 1.0
+81 0 1.0
+83 82 1.0
+84 82 1.0
+85 82 1.0
+86 82 1.0
+87 82 1.0
+88 82 1.0
+89 82 1.0
+90 82 1.0
+91 82 1.0
+92 82 1.0
+93 82 1.0
+94 82 1.0
+95 82 1.0
+96 82 1.0
+97 82 1.0
+98 82 1.0
+98 100 1.0
+99 82 1.0
+101 100 1.0
+102 100 1.0
+103 100 1.0
+104 100 1.0
+105 100 1.0
+106 100 1.0
+107 100 1.0
+108 100 1.0
+109 100 1.0
+110 100 1.0
+111 100 1.0
+112 100 1.0
+113 100 1.0
+114 100 1.0
+115 100 1.0
+116 100 1.0
+117 100 1.0
+118 100 1.0
+119 100 1.0
+120 100 1.0
+121 100 1.0
+122 100 1.0
+123 100 1.0
+124 100 1.0
+125 100 1.0
+126 100 1.0
+127 100 1.0
+128 100 1.0
+129 100 1.0
+130 100 1.0
+131 100 1.0
+132 100 1.0
+133 100 1.0
+134 100 1.0
+135 100 1.0
+136 100 1.0
+137 100 1.0
+138 100 1.0
+139 100 1.0
+140 100 1.0
+141 100 1.0
+142 100 1.0
+143 100 1.0
+144 100 1.0
+145 100 1.0
+146 100 1.0
+147 100 1.0
+148 100 1.0
+149 100 1.0
+150 100 1.0
+151 100 1.0
+152 100 1.0
+153 100 1.0
+154 100 1.0
+155 100 1.0
+156 100 1.0
+157 100 1.0
+158 100 1.0
+159 100 1.0
+160 100 1.0
+161 100 1.0
+162 100 1.0
+163 100 1.0
+164 100 1.0
+165 100 1.0
+166 100 1.0
+167 100 1.0
+168 100 1.0
+169 100 1.0
+170 100 1.0
+171 100 1.0
+172 100 1.0
+173 100 1.0
+174 100 1.0
+175 100 1.0
+176 100 1.0
+177 100 1.0
+178 100 1.0
+179 100 1.0
+180 100 1.0
+181 100 1.0
+182 100 1.0
+183 100 1.0
+184 100 1.0
+185 100 1.0
+186 100 1.0
+187 100 1.0
+188 100 1.0
+189 100 1.0
+190 100 1.0
+191 100 1.0
+192 100 1.0
+193 100 1.0
+194 100 1.0
+195 100 1.0
+196 100 1.0
+197 100 1.0
+198 100 1.0
+199 100 1.0
+200 100 1.0
+201 100 1.0
+202 100 1.0
+203 100 1.0
+204 100 1.0
+205 100 1.0
+206 100 1.0
+207 100 1.0
+208 100 1.0
+209 100 1.0
+210 100 1.0
+211 100 1.0
+212 100 1.0
+213 100 1.0
+214 100 1.0
+215 100 1.0
+216 100 1.0
+217 100 1.0
+218 100 1.0
+219 100 1.0
+220 100 1.0
+221 100 1.0
+222 100 1.0
+223 100 1.0
+224 100 1.0
+225 100 1.0
+226 100 1.0
+227 100 1.0
+228 100 1.0
+229 100 1.0
+230 100 1.0
+231 100 1.0
+232 100 1.0
+233 100 1.0
+234 100 1.0
+235 100 1.0
+236 100 1.0
+237 100 1.0
+238 100 1.0
+239 100 1.0
+240 100 1.0
+241 100 1.0
+242 100 1.0
+243 100 1.0
+244 100 1.0
+245 100 1.0
+246 100 1.0
+247 100 1.0
+248 100 1.0
+249 100 1.0
+250 100 1.0
+251 100 1.0
+252 100 1.0
+253 100 1.0
+254 100 1.0
+255 100 1.0
+256 100 1.0
+257 100 1.0
+258 100 1.0
+259 100 1.0
+260 100 1.0
+261 100 1.0
+262 100 1.0
+263 100 1.0
+264 100 1.0
+265 100 1.0
+266 100 1.0
+267 100 1.0
+268 100 1.0
+269 100 1.0
+270 100 1.0
+271 100 1.0
+272 100 1.0
+273 100 1.0
+274 100 1.0
+275 100 1.0
+276 100 1.0
+277 100 1.0
+278 100 1.0
+279 100 1.0
+280 100 1.0
+281 100 1.0
+282 100 1.0
+283 100 1.0
+284 100 1.0
+285 100 1.0
+286 100 1.0
+287 100 1.0
+288 100 1.0
+289 100 1.0
+290 100 1.0
+291 100 1.0
+292 100 1.0
+293 100 1.0
+294 100 1.0
+295 100 1.0
+296 100 1.0
+297 100 1.0
+298 100 1.0
+299 100 1.0
+300 100 1.0
+301 100 1.0
+302 100 1.0
+303 100 1.0
+304 100 1.0
+305 100 1.0
+306 100 1.0
+307 100 1.0
+308 100 1.0
+309 100 1.0
+310 100 1.0
+311 100 1.0
+312 100 1.0
+313 100 1.0
+314 100 1.0
+315 100 1.0
+316 100 1.0
+317 100 1.0
+318 100 1.0
+319 100 1.0
+320 100 1.0
+321 100 1.0
+322 100 1.0
+323 100 1.0
+324 100 1.0
+325 100 1.0
+326 100 1.0
+327 100 1.0
+328 100 1.0
+329 100 1.0
+330 100 1.0
+331 100 1.0
+332 100 1.0
+333 100 1.0
+334 100 1.0
+335 100 1.0
+336 100 1.0
+337 100 1.0
+338 100 1.0
+339 100 1.0
+340 100 1.0
+341 100 1.0
+342 100 1.0
+343 100 1.0
+344 100 1.0
+345 100 1.0
+346 100 1.0
+347 100 1.0
+348 100 1.0
+349 100 1.0
+350 100 1.0
+351 100 1.0
+352 100 1.0
+353 100 1.0
+354 100 1.0
+355 100 1.0
+356 100 1.0
+357 100 1.0
+358 100 1.0
+359 100 1.0
+360 100 1.0
+361 100 1.0
+362 100 1.0
+363 100 1.0
+364 100 1.0
+365 100 1.0
+366 100 1.0
+367 100 1.0
+368 100 1.0
+369 100 1.0
+370 100 1.0
+371 100 1.0
+372 100 1.0
+373 100 1.0
+374 100 1.0
+375 100 1.0
+376 100 1.0
+377 100 1.0
+378 100 1.0
+379 100 1.0
+380 100 1.0
+381 100 1.0
+382 100 1.0
+383 100 1.0

@@ -2,6 +2,7 @@ from wiki_api_bl import read_file
 from wiki_api_bl import map_input
 from wiki_api_bl import merge_map_input
 from wiki_api_bl import writeData
+from wiki_api_bl import sort_map_input
 
 import multiprocessing as mp
 from functools import partial
@@ -21,10 +22,12 @@ else:
 if __name__=="__main__":
     tps_start = time.time()
 
+    print(titles)
     stopwords = read_file("stopwords.txt")
     infoboxes = read_file("infoboxes.txt")
-
-    if len(titles) == 1:
+    titles = sort_map_input(titles, stopwords, infoboxes)
+    print(titles)
+    """if len(titles) == 1:
         data, arc, label = map_input(titles[0], iteration, stopwords, infoboxes)      #One search
     else:
         print(titles)
@@ -35,7 +38,7 @@ if __name__=="__main__":
         data, arc, label = merge_map_input(data, arc, label)
         
     print(data)
-    writeData(data, arc, label, filename)
+    writeData(data, arc, label, filename)"""
 
     tps_end = time.time()
     print("tps =", tps_end - tps_start)

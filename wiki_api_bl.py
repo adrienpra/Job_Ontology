@@ -132,6 +132,19 @@ def read_file(filename):
 
     return file
 
+def sort_map_input(titles, stopwords, infoboxes):
+    dic = {}
+
+    for title in titles:
+        page = Pagelinks_bl(title, stopwords, infoboxes)
+        page.readData()
+        dic[title] = len(page.PAGES)
+    
+    dic = dict(sorted(dic.items(), key=lambda x:x[1]))
+    sorted_titles = list(dic.keys())
+
+    return sorted_titles #took all links no filter
+
 def map_input(bltitle, iteration, stopwords, infoboxes):
     arc = []
     data = []

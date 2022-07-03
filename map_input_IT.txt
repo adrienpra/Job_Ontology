@@ -1,1 +1,5 @@
+Von_Mises_yield_criterion
 Yield_surface
+Web_developer
+Front-end_web_development
+Data_science
