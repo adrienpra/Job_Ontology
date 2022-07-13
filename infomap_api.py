@@ -17,7 +17,7 @@ def read_df(filename):
 def create_nx(df):
     G = nx.from_pandas_edgelist(df, source='Source', target='Target', edge_attr='Weight', create_using=nx.DiGraph())
 
-    nx.draw_networkx(G)
+    nx.draw_networkx(G, with_labels=False, font_size=6, node_size=150)
     plt.show()
 
     __location__ = os.path.realpath(
@@ -44,7 +44,7 @@ def infomap(filename):
     for node in im.tree:
         if node.is_leaf:
             print(node.node_id, node.module_id)
-            
+
 if __name__ == "__main__":
     filename = "df.csv"
     df = read_df(filename)

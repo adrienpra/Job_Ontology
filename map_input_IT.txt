@@ -1,1 +1,4 @@
-Von_Mises_yield_criterion
+Data_science
+Machine_learning
+Data_architecture
+DevOps
