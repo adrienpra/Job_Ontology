@@ -2,7 +2,7 @@ import numpy as np
 import requests
 import re
 import os
-#import time
+import pandas as pd
 
 class Pagelinks_bl:
     def __init__(self, title, stopwords, infoboxes):
@@ -221,6 +221,9 @@ def merge_map_input(data, arcs, labels):
     return data[0], arcs[0], labels[0]
 
 def writeData(data, arc, labels, filename):
+    
+    #list input infomap_online write txt
+    
     __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
@@ -240,7 +243,21 @@ def writeData(data, arc, labels, filename):
 
     f.close()
 
+    #list lables write txt
+
     f2 = open(os.path.join(__location__, "labels.txt"), "w", encoding="utf-8")
     for label in labels:
         f2.write(label + "\n")
     f2.close()
+    
+    #pd dataframe write csv
+    
+    source_in, target_out, weight = zip(*arc)
+
+    source = [data[int(i)] for i in source_in]
+    target = [data[int(i)] for i in target_out]
+
+    Dic = {'source': source, 'target':target, 'weight':weight}
+    df = pd.DataFrame(Dic)
+    
+    df.to_csv(os.path.join(__location__, 'df.csv'), header=False, index=False)
