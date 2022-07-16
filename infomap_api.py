@@ -11,11 +11,14 @@ def read_df(filename):
     df = pd.read_csv(os.path.join(__location__, filename),
                     sep=',',
                     header=None,
-                    names=['Source', 'Target', 'Weight'])
+                    names=['source', 'target', 'weight'], 
+                    encoding="utf-8")
+    df['weight'] = df['weight'].astype(str)
+
     return df
 
 def create_nx(df):
-    G = nx.from_pandas_edgelist(df, source='Source', target='Target', edge_attr='Weight', create_using=nx.DiGraph())
+    G = nx.from_pandas_edgelist(df, source='source', target='target', edge_attr='weight', create_using=nx.DiGraph())
 
     nx.draw_networkx(G, with_labels=False, font_size=6, node_size=150)
     plt.show()
@@ -23,7 +26,7 @@ def create_nx(df):
     __location__ = os.path.realpath(
         os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-    nx.write_pajek(G, os.path.join(__location__, 'input.net'))
+    nx.write_pajek(G, os.path.join(__location__, 'input.net'), encoding='utf-8')
 
 def infomap(filename):
     im = Infomap(silent=True)
@@ -37,13 +40,13 @@ def infomap(filename):
     im.run()
     im.write_clu(os.path.join(__location__, 'result.clu')) #write .clu file
 
-    print(f"Found {im.num_top_modules} modules with codelength: {im.codelength}")
-
-    print("Result")
+    """print("Result")
     print("\n#node module")
     for node in im.tree:
         if node.is_leaf:
-            print(node.node_id, node.module_id)
+            print(node.node_id, node.module_id)"""
+
+    print(f"Found {im.num_top_modules} modules with codelength: {im.codelength}")
 
 if __name__ == "__main__":
     filename = "df.csv"

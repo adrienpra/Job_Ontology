@@ -1,4 +1,2 @@
-Data_science
-Machine_learning
-Data_architecture
-DevOps
+Von_Mises_yield_criterion
+Yield_surface

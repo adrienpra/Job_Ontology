@@ -1,649 +1,134 @@
-*Vertices 615
-# node_id name 615
-0 "Data_architecture"
-1 "Data_structure"
-2 "Conceptual_schema"
-3 "Data_model"
-4 "Information_architecture"
-5 "Entity–relationship_model"
-6 "Data_management"
-7 "Data_modeling"
-8 "Logical_schema"
-9 "Data-flow_diagram"
-10 "Data_store"
-11 "The_Open_Group_Architecture_Framework"
-12 "Information_model"
-13 "Data_structure_diagram"
-14 "Information_silo"
-15 "Enterprise_architecture_framework"
-16 "Data_integration"
-17 "Architectural_pattern"
-18 "ER/Studio"
-19 "Database_model"
-20 "Transaction_data"
-21 "Reference_data"
-22 "Enhanced_entity–relationship_model"
-23 "Applications_architecture"
-24 "Solution_architecture"
-25 "Architecture_domain"
-26 "Data_model_(GIS)"
-27 "Semantic_data_model"
-28 "Generic_data_model"
-29 "FDIC_Enterprise_Architecture_Framework"
-30 "Enterprise_architecture_planning"
-31 "Jaap_Schekkerman"
-32 "Enterprise_Data_Planning"
-33 "Disparate_system"
-34 "Experience_architecture"
-35 "Data_definition_specification"
-36 "Data_architect"
-37 "Zaloni"
-38 "Digital_platform_(infrastructure)"
-39 "Data_Management_Association"
-40 "Data_science"
-41 "Computing"
-42 "Computer_science"
-43 "Data_warehouse"
-44 "Data_compression"
-45 "Gigabyte"
-46 "Literate_programming"
-47 "Organized_crime"
-48 "Statistics"
-49 "Data_storage"
-50 "Data_integrity"
-51 "Data_mining"
-52 "Operations_research"
-53 "Statistician"
-54 "Knowledge_management"
-55 "Information_science"
-56 "Data_acquisition"
-57 "Buzzword"
-58 "Document"
-59 "Behavioral_economics"
-60 "Public_library"
-61 "Third_normal_form"
-62 "Machine_learning"
-63 "Information_design"
-64 "Information_privacy"
-65 "Extract,_transform,_load"
-66 "Knowledge"
-67 "Opinion_poll"
-68 "Archive"
-69 "Health_informatics"
-70 "Data_degradation"
-71 "R_(programming_language)"
-72 "Bachelor_of_Business_Administration"
-73 "Exploratory_data_analysis"
-74 "DS"
-75 "Information_management"
-76 "Geomatics"
-77 "Computer_science_and_engineering"
-78 "Psephology"
-79 "Backward_chaining"
-80 "Infographic"
-81 "Data_corruption"
-82 "Data_migration"
-83 "Data_security"
-84 "Data_loss"
-85 "Business_analyst"
-86 "Data_quality"
-87 "Cultural_artifact"
-88 "Data_validation"
-89 "Geographic_information_science"
-90 "Citizen_science"
-91 "Data_recovery"
-92 "Law_library"
-93 "Data_(computing)"
-94 "Medical_library"
-95 "Chief_data_officer"
-96 "Color_scheme"
-97 "Private_library"
-98 "Data_archaeology"
-99 "Data_farming"
-100 "Data_analysis"
-101 "Archival_science"
-102 "Data_retention"
-103 "Cataloging_(library_science)"
-104 "Master_of_Library_and_Information_Science"
-105 "Product_manager"
-106 "Outline_of_library_and_information_science"
-107 "Data_and_information_visualization"
-108 "Data_cleansing"
-109 "Data_scrubbing"
-110 "Formal_science"
-111 "Memetic_algorithm"
-112 "Phenomics"
-113 "Master_of_Economics"
-114 "School_library"
-115 "Structure_mining"
-116 "Data_library"
-117 "Pakistan_Institute_of_Nuclear_Science_&_Technology"
-118 "RapidMiner"
-119 "Data_steward"
-120 "Process_mining"
-121 "Transportation_forecasting"
-122 "Spatiotemporal_database"
-123 "Academic_library"
-124 "Data_fusion"
-125 "Economics_education"
-126 "Master_of_Quantitative_Finance"
-127 "Computational_engineering"
-128 "Data_format_management"
-129 "Preservation_(library_and_archive)"
-130 "World_Programming_System"
-131 "Information_school"
-132 "Branches_of_science"
-133 "Data_pre-processing"
-134 "Data_wrangling"
-135 "Novelty_detection"
-136 "Special_library"
-137 "Computational_statistics"
-138 "Statistical_graphics"
-139 "Fractal_analysis"
-140 "Library_science"
-141 "Metadata"
-142 "Data"
-143 "Information"
-144 "Political_forecasting"
-145 "Health_information_technology"
-146 "Computational_thinking"
-147 "Master_of_Finance"
-148 "Decision_intelligence"
-149 "Collective_intelligence"
-150 "Cultural_analytics"
-151 "Chief_Technology_Officer_of_the_United_States"
-152 "Information_governance"
-153 "Industrial_engineering"
-154 "MEASURE_Evaluation"
-155 "Data_reduction"
-156 "Professional_Science_Master's_Degree"
-157 "Data_curation"
-158 "Informatics"
-159 "Informatics_(disambiguation)"
-160 "Applied_mathematics"
-161 "Synthetic_data"
-162 "Wisconsin_Institute_for_Discovery"
-163 "Computational_journalism"
-164 "Mathematical_sciences"
-165 "AddThis"
-166 "Economy_of_Columbus,_Ohio"
-167 "Addictive_personality"
-168 "Big_data"
-169 "Information_capital"
-170 "ELKI"
-171 "Astroinformatics"
-172 "Quantitative_analysis_(finance)"
-173 "Eudaemons"
-174 "Rexer's_Annual_Data_Miner_Survey"
-175 "Mike_Develin"
-176 "Information_history"
-177 "LinkCycle"
-178 "Forward_chaining"
-179 "Data-driven"
-180 "Scenario_optimization"
-181 "SyndicateRoom"
-182 "ScribbleLive"
-183 "Operating_partner"
-184 "Coursera"
-185 "APL_(programming_language)"
-186 "Business_intelligence"
-187 "Outline_of_computer_science"
-188 "1961_in_science"
-189 "Regeneron_Science_Talent_Search"
-190 "There_are_known_knowns"
-191 "E-research"
-192 "Sunny_Mehta"
-193 "Master_of_Science_in_Information_Technology"
-194 "Scikit-learn"
-195 "Banjo_(application)"
-196 "David_Paulides"
-197 "Gregory_Piatetsky-Shapiro"
-198 "Jeff_Hammerbacher"
-199 "Dirk_Eddelbuettel"
-200 "David_Cournapeau"
-201 "Ashok_Srivastava"
-202 "Emily_Gorcenski"
-203 "Roy_David_Williams"
-204 "Jen_Lowe"
-205 "Misleading_graph"
-206 "ORCA_(computer_system)"
-207 "Pipeline_Pilot"
-208 "Jens_Nordvig"
-209 "Eureqa"
-210 "Envirome"
-211 "Data_literacy"
-212 "T-distributed_stochastic_neighbor_embedding"
-213 "Data_thinking"
-214 "Jaffray_Woodriff"
-215 "Elections_in_Haryana"
-216 "Datafication"
-217 "Collections_management"
-218 "Data_publishing"
-219 "Data_editing"
-220 "Anaconda_(Python_distribution)"
-221 "Industrial_and_production_engineering"
-222 "Filter_(software)"
-223 "Data_exploration"
-224 "Continuous_analytics"
-225 "DataOps"
-226 "Illegal,_unreported_and_unregulated_fishing_in_the_Arctic"
-227 "Deforestation_and_climate_change"
-228 "Altmetric"
-229 "Media_intelligence"
-230 "Conda_(package_manager)"
-231 "William_S._Cleveland"
-232 "Stephanie_Singer"
-233 "Data_scraping"
-234 "Lighthouse_Labs"
-235 "Architect_(software)"
-236 "Chief_information_governance_officer"
-237 "Population_informatics"
-238 "Implied_volatility"
-239 "St._Xavier's_College,_Mumbai"
-240 "NEC_Laboratories_America"
-241 "QA_Ltd"
-242 "Apache_SystemDS"
-243 "ICAART"
-244 "California_Science_and_Technology_University"
-245 "Woz_U"
-246 "Australian_Laureate_Fellowship"
-247 "TechGig.com"
-248 "One_Fourth_Labs"
-249 "Metatron_Discovery"
-250 "Oliver_Zahn"
-251 "Business_Technology_Management"
-252 "Statsmodels"
-253 "Hannu_Toivonen_(professor)"
-254 "Digital_architect"
-255 "CyberGIS"
-256 "Coding_bootcamp"
-257 "Data_Science_Institute"
-258 "Longbing_Cao"
-259 "DataMeet"
-260 "Datascope_Analytics"
-261 "Patent_analysis"
-262 "Joint_Program_in_Survey_Methodology"
-263 "Frauke_Kreuter"
-264 "Information_oriented_software_development"
-265 "Intelligence_engine"
-266 "Data_augmentation"
-267 "Master_of_Science_in_Business_Analytics"
-268 "Big_memory"
-269 "Sethu_Vijayakumar"
-270 "Notebook_interface"
-271 "Azer_Bestavros"
-272 "Dat_(software)"
-273 "Metascience"
-274 "Social_profiling"
-275 "Data_preparation"
-276 "Data_blending"
-277 "Master_in_Data_Science"
-278 "MICrONS"
-279 "Kennedy_College_of_Sciences"
-280 "Cumulative_accuracy_profile"
-281 "Data_Science_Africa"
-282 "Documenting_Hate"
-283 "IBM_Watson_Studio"
-284 "IBM_Machine_Learning_Hub"
-285 "Data_culture"
-286 "Kathy_Ensor"
-287 "Data_preservation"
-288 "New-collar_worker"
-289 "Pricesearcher"
-290 "Data_science_competition_platform"
-291 "Archives_management"
-292 "Plate_Tectonics_Revolution"
-293 "Flatiron_School"
-294 "Rachel_Levy_(mathematician)"
-295 "Computational_psychometrics"
-296 "Voice_computing"
-297 "Argument_technology"
-298 "Kubeflow"
-299 "Augmented_Analytics"
-300 "Free_and_Open_Source_Software_Conference_India"
-301 "The_Center_of_Applied_Data_Science"
-302 "Rebecca_Willett"
-303 "Bridget_Boakye"
-304 "Petros_Drineas"
-305 "Russell_Viner"
-306 "ODSC"
-307 "Privacy_settings"
-308 "Galit_Shmueli"
-309 "Learning_engineering"
-310 "Wong_Ho-wa"
-311 "PolyAnalyst"
-312 "R_package"
-313 "FastAPI"
-314 "GPT-2"
-315 "Data_collaboratives"
-316 "Temiloluwa_Prioleau"
-317 "Nandini_Kannan"
-318 "Shirley_Wu"
-319 "VACUUM"
-320 "Hench_(novel)"
-321 "Sarah_Cohen-Boulakia"
-322 "Computational_audiology"
-323 "Aretha_Teckentrup"
-324 "Drift_(data_science)"
-325 "UniAthena"
-326 "Shaku_Atre"
-327 "Tamar_Huggins"
-328 "Algorithm"
-329 "Artificial_intelligence"
-330 "Aesthetics"
-331 "Analysis_of_algorithms"
-332 "Audio_signal_processing"
-333 "Biostatistics"
-334 "Boltzmann_distribution"
-335 "Bioinformatics"
-336 "Bayesian_probability"
-337 "Combinatorics"
-338 "Computer_programming"
-339 "Computational_linguistics"
-340 "Cognitive_science"
-341 "Category_theory"
-342 "Computational_chemistry"
-343 "Chinese_room"
-344 "Computer_vision"
-345 "Rendering_(computer_graphics)"
-346 "Computer_animation"
-347 "Cyc"
-348 "Computer_music"
-349 "Control_theory"
-350 "Controversy"
-351 "Complexity"
-352 "Computer_security"
-353 "Convolution"
-354 "Computational_complexity_theory"
-355 "DNA"
-356 "Database"
-357 "Digital_signal_processing"
-358 "Differential_geometry"
-359 "Dark_matter"
-360 "Enterprise_resource_planning"
-361 "E-commerce"
-362 "Expected_value"
-363 "Expert_system"
-364 "Field-programmable_gate_array"
-365 "Finance"
-366 "Floating-point_arithmetic"
-367 "Feedback"
-368 "Functional_decomposition"
-369 "Game_theory"
-370 "Graph_theory"
-371 "GIMP"
-372 "'Hello,_World!'_program"
-373 "DevOps"
-374 "Integrated_development_environment"
-375 "Project_management"
-376 "Software_engineering"
-377 "Software_documentation"
-378 "Systems_engineering"
-379 "Static_program_analysis"
-380 "Software_Engineering_Body_of_Knowledge"
-381 "Software_testing"
-382 "Unified_Modeling_Language"
-383 "Waterfall_model"
-384 "Software_bug"
-385 "Regression_testing"
-386 "Software_architecture"
-387 "Ontology_(information_science)"
-388 "Debugger"
-389 "Spiral_model"
-390 "Formal_methods"
-391 "Program_analysis"
-392 "Iterative_and_incremental_development"
-393 "Software_configuration_management"
-394 "Object_(computer_science)"
-395 "Software_metric"
-396 "Programming_paradigm"
-397 "Michael_A._Jackson_(computer_scientist)"
-398 "Unit_testing"
-399 "Software_design"
-400 "Rational_Unified_Process"
-401 "Rapid_application_development"
-402 "Traceability_matrix"
-403 "Software_development"
-404 "Use_case"
-405 "Modeling_language"
-406 "Barry_Boehm"
-407 "Integration_testing"
-408 "Test-driven_development"
-409 "Programming_tool"
-410 "IDEF"
-411 "Requirements_analysis"
-412 "Code_review"
-413 "Systems_development_life_cycle"
-414 "Agile_software_development"
-415 "Service-oriented_architecture"
-416 "Dynamic_systems_development_method"
-417 "Software_verification_and_validation"
-418 "White-box_testing"
-419 "Software_maintenance"
-420 "Philippe_Kruchten"
-421 "Data-flow_analysis"
-422 "Otter_(software)"
-423 "ISO/IEC_15504"
-424 "Requirements_engineering"
-425 "Software_requirements_specification"
-426 "James_Rumbaugh"
-427 "Test_automation"
-428 "Software_prototyping"
-429 "Business_process_modeling"
-430 "Personal_software_process"
-431 "Web_engineering"
-432 "V-Model"
-433 "Capability_Maturity_Model_Integration"
-434 "Software_quality"
-435 "Test_case"
-436 "Enterprise_architecture"
-437 "Timeboxing"
-438 "Metamodeling"
-439 "Software_deployment"
-440 "Reliability_engineering"
-441 "Continuous_integration"
-442 "Software_quality_assurance"
-443 "Lean_software_development"
-444 "Feature-driven_development"
-445 "Scenario_(computing)"
-446 "Release_engineering"
-447 "Profiling_(computer_programming)"
-448 "Open-source_software_development"
-449 "Microsoft_Solutions_Framework"
-450 "Object-oriented_analysis_and_design"
-451 "User_story"
-452 "IEEE_Standards_Association"
-453 "Adaptive_software_development"
-454 "SIESTA_(computer_program)"
-455 "Behavior-driven_development"
-456 "Incremental_build_model"
-457 "Big_Design_Up_Front"
-458 "Computer_network_programming"
-459 "Cleanroom_software_engineering"
-460 "Linux_Professional_Institute_Certification_Programs"
-461 "Enterprise_Unified_Process"
-462 "Model-driven_engineering"
-463 "Scrum_(software_development)"
-464 "Software_peer_review"
-465 "Software_review"
-466 "Peri_Tarr"
-467 "Application_lifecycle_management"
-468 "Unified_Process"
-469 "Object_model"
-470 "Cris_Kobryn"
-471 "Reorganization_plan_of_United_States_Army"
-472 "Management_fad"
-473 "Functional_testing"
-474 "PivotPoint_Technology_Corporation"
-475 "Web_operations"
-476 "Build_automation"
-477 "Structured_analysis"
-478 "Coding_conventions"
-479 "System_integration"
-480 "Tracing_(software)"
-481 "Functional_specification"
-482 "Zero_one_infinity_rule"
-483 "ISconf"
-484 "Offshore_custom_software_development"
-485 "UPEDU"
-486 "Agile_testing"
-487 "V-Model_(software_development)"
-488 "Software_measurement"
-489 "Oracle_Unified_Method"
-490 "Azure_DevOps_Server"
-491 "Nancy_Leveson"
-492 "Resource-oriented_architecture"
-493 "Team_software_process"
-494 "Change-advisory_board"
-495 "Wheel_and_spoke_model"
-496 "Microsoft_Visual_Studio"
-497 "Domain-driven_design"
-498 "Winston_W._Royce"
-499 "AnthillPro"
-500 "GitHub"
-501 "Function_model"
-502 "View_model"
-503 "Virtue_(software)"
-504 "Valour_(software)"
-505 "Westi"
-506 "Victor_Basili"
-507 "Axure_RP"
-508 "Goal-Driven_Software_Development_Process"
-509 "WDU_(software)"
-510 "Grasp_(software)"
-511 "IBM_POWER_(software)"
-512 "Software_requirements"
-513 "Application_service_management"
-514 "Colette_Rolland"
-515 "A_Guide_to_the_Business_Analysis_Body_of_Knowledge"
-516 "Checkstyle"
-517 "API_testing"
-518 "Feature_model"
-519 "Triune_continuum_paradigm"
-520 "Orthogonality_(programming)"
-521 "Progress_Chef"
-522 "Event-driven_SOA"
-523 "Service-oriented_software_engineering"
-524 "Systems_modeling"
-525 "Software_development_process"
-526 "Justinmind_(software)"
-527 "Debugging"
-528 "Go_(programming_language)"
-529 "JSLint"
-530 "Programming_team"
-531 "Release_management"
-532 "NixOS"
-533 "Object-oriented_programming"
-534 "PTC_Integrity"
-535 "Internet_application_management"
-536 "Software_archaeology"
-537 "In-database_processing"
-538 "Velocity_(software_development)"
-539 "Kanban_(development)"
-540 "Test_automation_management_tools"
-541 "Artifact-centric_business_process_model"
-542 "Model-driven_security"
-543 "Continuous_testing"
-544 "Enterprise_release_management"
-545 "Software_construction"
-546 "PerlTidy"
-547 "Continuous_delivery"
-548 "Specification_by_example"
-549 "Application-release_automation"
-550 "Service_virtualization"
-551 "JSHint"
-552 "Human_factors_and_ergonomics"
-553 "Unicom_Focal_Point"
-554 "Parasoft_C/C++test"
-555 "Development_testing"
-556 "Join-pattern"
-557 "Extreme_programming"
-558 "Gatling_(software)"
-559 "Long-term_support"
-560 "Disciplined_agile_delivery"
-561 "Docker_(software)"
-562 "Requirements_Modeling_Framework"
-563 "Continuous_test-driven_development"
-564 "Smoke_testing_(software)"
-565 "Knowledge_Based_Software_Assistant"
-566 "Acceptance_test-driven_development"
-567 "User_research"
-568 "Scrumban"
-569 "Software_diagnosis"
-570 "Front-end_web_development"
-571 "Performance_management_work"
-572 "RhodeCode"
-573 "Cloud_management"
-574 "Rudder_(software)"
-575 "BuildMaster"
-576 "Microservices"
-577 "GitLab"
-578 "Shift-left_testing"
-579 "ProGet"
-580 "ISO/IEC_33001"
-581 "Munki_(software)"
-582 "Infrastructure_as_code"
-583 "Scaled_agile_framework"
-584 "DevOps_toolchain"
-585 "Site_reliability_engineering"
-586 "Technical_details_of_Netflix"
-587 "Continuous_configuration_automation"
-588 "WinOps"
-589 "Serverless_computing"
-590 "Collective_Knowledge_(software)"
-591 "StackEngine"
-592 "CI/CD"
-593 "Buddy_(software)"
-594 "Software_testing_tactics"
-595 "Value_stream"
-596 "Twelve-Factor_App_methodology"
-597 "Application_strings_manager"
-598 "StackStorm"
-599 "MLOps"
-600 "Azure_DevOps"
-601 "Cloud_native_computing"
-602 "Tamar_Eilam"
-603 "Blue-green_deployment"
-604 "Essential_Systems_Analysis"
-605 "Distributed_agile_software_development"
-606 "Artificial_Intelligence_for_IT_Operations"
-607 "Cloud-Native_Network_Function"
-608 "ModelOps"
-609 "C4_model"
-610 "TestOps"
-611 "Ops_(disambiguation)"
-612 "Clear_Linux_OS"
-613 "Gitee"
-614 "Lapsus$"
-*Arcs 631
+*Vertices 108
+# node_id name 108
+0 Von_Mises_yield_criterion
+1 Plasticity_(physics)
+2 Strength_of_materials
+3 Structural_analysis
+4 Von_Mises
+5 Dislocation_creep
+6 Shear_strength
+7 Tytus_Maksymilian_Huber
+8 Padeye
+9 Yield_surface
+10 HMH
+11 T-criterion
+12 Mohr–Coulomb_theory
+13 Cauchy_stress_tensor
+14 Stress_space
+15 Drucker–Prager_yield_criterion
+16 Lode_coordinates
+17 Huber's_equation
+18 Critical_state_soil_mechanics
+19 Hill_yield_criterion
+20 Hosford_yield_criterion
+21 Viscoplasticity
+22 Material_failure_theory
+23 Structural_engineering_theory
+24 Heinrich_Hencky
+25 Christensen_failure_criterion
+26 Micro-mechanics_of_failure
+27 Yu_Mao-Hong
+28 Load_path_analysis
+29 Stress_triaxiality
+30 Bigoni–Piccolroaz_yield_criterion
+31 Swarm_(simulation)
+32 Mutualism_(biology)
+33 Stigmergy
+34 Flocking_(behavior)
+35 Quorum_sensing
+36 Computational_archaeology
+37 Fish_migration
+38 Bird_migration
+39 Swarm_behaviour
+40 Reverse_migration_(birds)
+41 Particle_swarm_optimization
+42 Boids
+43 Ant_colony_optimization_algorithms
+44 Swarm_intelligence
+45 Swarm_(disambiguation)
+46 Crowd_simulation
+47 Salmon_run
+48 Herd
+49 Agent-based_model
+50 Swarm_robotics
+51 Allee_effect
+52 Swarming_(honey_bee)
+53 Decentralised_system
+54 Pack_hunter
+55 Feeding_frenzy
+56 Sardine_run
+57 Pack_(canine)
+58 Cell_migration
+59 Philopatry
+60 Microbial_intelligence
+61 Repast_(modeling_toolkit)
+62 Mixed-species_foraging_flock
+63 Lessepsian_migration
+64 Animal_migration_tracking
+65 Insect_migration
+66 Diel_vertical_migration
+67 Flock_(birds)
+68 Animal_migration
+69 Mobbing_(animal_behavior)
+70 Swarming_motility
+71 Swarm_Development_Group
+72 Natal_homing
+73 Swarming_(military)
+74 Bees_algorithm
+75 Homing_(biology)
+76 Symbrion
+77 Group_size_measures
+78 Predator_satiation
+79 Spatial_organization
+80 Patterns_of_self-organization_in_ants
+81 Task_allocation_and_partitioning_in_social_insects
+82 Comparison_of_agent-based_modeling_software
+83 Collective_intelligence
+84 Eusociality
+85 Herd_behavior
+86 Agent-based_social_simulation
+87 Collective_animal_behavior
+88 Shoaling_and_schooling
+89 Sort_sol
+90 Ant_robotics
+91 Lepidoptera_migration
+92 Firefly_algorithm
+93 Active_matter
+94 Cuckoo_search
+95 Bat_algorithm
+96 Bait_ball
+97 Agent-based_model_in_biology
+98 Self-propelled_particles
+99 Animal_navigation
+100 Vicsek_model
+101 Monarch_butterfly_migration
+102 Symmetry_breaking_of_escaping_ants
+103 Coded_wire_tag
+104 Clustering_of_self-propelled_particles
+105 Collective_motion
+106 Swarm_robotic_platforms
+107 Swarm_3D_printing
+*Arcs 106
 # source target weight
 1 0 1.0
 2 0 1.0
 3 0 1.0
-3 373 1.0
 4 0 1.0
 5 0 1.0
-5 373 1.0
-6 40 1.0
 6 0 1.0
 7 0 1.0
-7 373 1.0
 8 0 1.0
 9 0 1.0
 10 0 1.0
 11 0 1.0
 12 0 1.0
-12 373 1.0
 13 0 1.0
 14 0 1.0
 15 0 1.0
-15 373 1.0
 16 0 1.0
-16 40 1.0
 17 0 1.0
 18 0 1.0
 19 0 1.0
-19 373 1.0
 20 0 1.0
 21 0 1.0
 22 0 1.0
@@ -655,596 +140,79 @@
 28 0 1.0
 29 0 1.0
 30 0 1.0
-31 0 1.0
-32 0 1.0
-33 0 1.0
-34 0 1.0
-35 0 1.0
-36 0 1.0
-37 0 1.0
-38 0 1.0
-39 0 1.0
-39 40 1.0
-41 62 1.0
-41 40 1.0
-42 40 1.0
-42 373 1.0
-42 62 1.0
-43 40 1.0
-44 40 1.0
-44 62 1.0
-45 40 1.0
-46 40 1.0
-47 40 1.0
-48 40 1.0
-49 40 1.0
-50 40 1.0
-51 40 1.0
-52 40 1.0
-53 40 1.0
-54 40 1.0
-55 40 1.0
-56 40 1.0
-57 40 1.0
-57 373 1.0
-58 40 1.0
-59 40 1.0
-60 40 1.0
-61 40 1.0
-62 40 1.0
-63 40 1.0
-64 40 1.0
-65 40 1.0
-66 40 1.0
-67 40 1.0
-68 40 1.0
-69 40 1.0
-70 40 1.0
-71 40 1.0
-72 40 1.0
-73 40 1.0
-74 40 1.0
-75 40 1.0
-76 40 1.0
-77 40 1.0
-78 40 1.0
-79 40 1.0
-80 40 1.0
-81 40 1.0
-82 40 1.0
-83 40 1.0
-84 40 1.0
-85 40 1.0
-86 40 1.0
-87 40 1.0
-88 40 1.0
-89 40 1.0
-90 40 1.0
-91 40 1.0
-92 40 1.0
-93 40 1.0
-94 40 1.0
-95 40 1.0
-96 40 1.0
-97 40 1.0
-98 40 1.0
-99 40 1.0
-100 40 1.0
-101 40 1.0
-102 40 1.0
-103 40 1.0
-104 40 1.0
-105 40 1.0
-106 40 1.0
-107 40 1.0
-108 40 1.0
-109 40 1.0
-110 40 1.0
-111 40 1.0
-112 40 1.0
-113 40 1.0
-114 40 1.0
-115 40 1.0
-116 40 1.0
-117 40 1.0
-118 40 1.0
-119 40 1.0
-120 40 1.0
-121 40 1.0
-122 40 1.0
-123 40 1.0
-124 40 1.0
-125 40 1.0
-126 40 1.0
-127 40 1.0
-128 40 1.0
-129 40 1.0
-130 40 1.0
-131 40 1.0
-132 40 1.0
-133 40 1.0
-134 40 1.0
-135 40 1.0
-136 40 1.0
-137 40 1.0
-138 40 1.0
-139 40 1.0
-140 40 1.0
-141 373 1.0
-141 40 1.0
-142 40 1.0
-143 40 1.0
-144 40 1.0
-145 40 1.0
-146 40 1.0
-147 40 1.0
-148 40 1.0
-149 40 1.0
-150 40 1.0
-151 40 1.0
-152 40 1.0
-153 40 1.0
-154 40 1.0
-155 40 1.0
-156 40 1.0
-157 40 1.0
-158 40 1.0
-159 40 1.0
-160 40 1.0
-161 40 1.0
-162 40 1.0
-163 40 1.0
-164 40 1.0
-165 40 1.0
-166 40 1.0
-167 40 1.0
-168 40 1.0
-169 40 1.0
-170 40 1.0
-171 40 1.0
-172 40 1.0
-173 40 1.0
-174 40 1.0
-175 40 1.0
-176 40 1.0
-177 40 1.0
-178 40 1.0
-179 40 1.0
-180 40 1.0
-181 40 1.0
-182 40 1.0
-183 40 1.0
-184 40 1.0
-185 40 1.0
-186 40 1.0
-187 40 1.0
-188 40 1.0
-189 40 1.0
-190 40 1.0
-191 40 1.0
-192 40 1.0
-193 40 1.0
-194 40 1.0
-195 40 1.0
-196 40 1.0
-197 40 1.0
-198 40 1.0
-199 40 1.0
-200 40 1.0
-201 40 1.0
-202 40 1.0
-203 40 1.0
-204 40 1.0
-205 40 1.0
-206 40 1.0
-207 40 1.0
-208 40 1.0
-209 40 1.0
-210 40 1.0
-211 40 1.0
-212 40 1.0
-213 40 1.0
-214 40 1.0
-215 40 1.0
-216 40 1.0
-217 40 1.0
-218 40 1.0
-219 40 1.0
-220 40 1.0
-221 40 1.0
-222 40 1.0
-223 40 1.0
-224 40 1.0
-225 373 1.0
-225 40 1.0
-226 40 1.0
-227 40 1.0
-228 40 1.0
-229 40 1.0
-230 40 1.0
-231 40 1.0
-232 40 1.0
-233 40 1.0
-234 40 1.0
-235 40 1.0
-236 40 1.0
-237 40 1.0
-238 40 1.0
-239 40 1.0
-240 40 1.0
-241 373 1.0
-241 40 1.0
-242 40 1.0
-243 40 1.0
-244 40 1.0
-245 40 1.0
-246 40 1.0
-247 40 1.0
-248 40 1.0
-249 40 1.0
-250 40 1.0
-251 40 1.0
-252 40 1.0
-253 40 1.0
-254 40 1.0
-255 40 1.0
-256 40 1.0
-257 40 1.0
-258 40 1.0
-259 40 1.0
-260 40 1.0
-261 40 1.0
-262 40 1.0
-263 40 1.0
-264 40 1.0
-265 40 1.0
-266 40 1.0
-267 40 1.0
-268 40 1.0
-269 40 1.0
-270 40 1.0
-271 40 1.0
-272 40 1.0
-273 40 1.0
-274 40 1.0
-275 40 1.0
-276 40 1.0
-277 40 1.0
-278 40 1.0
-279 40 1.0
-280 40 1.0
-281 40 1.0
-282 40 1.0
-283 40 1.0
-284 40 1.0
-285 40 1.0
-286 40 1.0
-287 40 1.0
-288 40 1.0
-289 40 1.0
-289 373 1.0
-290 40 1.0
-291 40 1.0
-292 40 1.0
-293 40 1.0
-294 40 1.0
-295 40 1.0
-296 40 1.0
-297 40 1.0
-298 40 1.0
-299 40 1.0
-300 40 1.0
-301 40 1.0
-302 40 1.0
-303 40 1.0
-304 40 1.0
-305 40 1.0
-306 40 1.0
-307 40 1.0
-308 40 1.0
-309 40 1.0
-310 40 1.0
-311 40 1.0
-312 40 1.0
-313 40 1.0
-314 40 1.0
-315 40 1.0
-316 40 1.0
-317 40 1.0
-318 40 1.0
-319 40 1.0
-320 40 1.0
-321 40 1.0
-322 40 1.0
-323 40 1.0
-324 40 1.0
-325 40 1.0
-326 40 1.0
-327 40 1.0
-328 62 1.0
-329 62 1.0
-330 62 1.0
-331 62 1.0
-332 62 1.0
-333 62 1.0
-334 62 1.0
-335 62 1.0
-336 62 1.0
-337 62 1.0
-338 62 1.0
-338 373 1.0
-339 62 1.0
-340 62 1.0
-341 62 1.0
-342 62 1.0
-343 62 1.0
-344 62 1.0
-345 62 1.0
-346 62 1.0
-347 62 1.0
-348 62 1.0
-349 62 1.0
-350 62 1.0
-351 62 1.0
-352 62 1.0
-353 62 1.0
-354 62 1.0
-355 62 1.0
-356 373 1.0
-356 62 1.0
-357 62 1.0
-358 62 1.0
-359 62 1.0
-360 62 1.0
-361 62 1.0
-362 62 1.0
-363 62 1.0
-364 62 1.0
-365 62 1.0
-366 62 1.0
-367 62 1.0
-368 62 1.0
-369 62 1.0
-370 62 1.0
-371 62 1.0
-374 373 1.0
-375 373 1.0
-376 373 1.0
-377 373 1.0
-378 373 1.0
-379 373 1.0
-380 373 1.0
-381 373 1.0
-382 373 1.0
-383 373 1.0
-384 373 1.0
-385 373 1.0
-386 373 1.0
-387 373 1.0
-388 373 1.0
-389 373 1.0
-390 373 1.0
-391 373 1.0
-392 373 1.0
-393 373 1.0
-394 373 1.0
-395 373 1.0
-396 373 1.0
-397 373 1.0
-398 373 1.0
-399 373 1.0
-400 373 1.0
-401 373 1.0
-402 373 1.0
-403 373 1.0
-404 373 1.0
-405 373 1.0
-406 373 1.0
-407 373 1.0
-408 373 1.0
-409 373 1.0
-410 373 1.0
-411 373 1.0
-412 373 1.0
-413 373 1.0
-414 373 1.0
-415 373 1.0
-416 373 1.0
-417 373 1.0
-418 373 1.0
-419 373 1.0
-420 373 1.0
-421 373 1.0
-422 373 1.0
-423 373 1.0
-424 373 1.0
-425 373 1.0
-426 373 1.0
-427 373 1.0
-428 373 1.0
-429 373 1.0
-430 373 1.0
-431 373 1.0
-432 373 1.0
-433 373 1.0
-434 373 1.0
-435 373 1.0
-436 373 1.0
-437 373 1.0
-438 373 1.0
-439 373 1.0
-440 373 1.0
-441 373 1.0
-442 373 1.0
-443 373 1.0
-444 373 1.0
-445 373 1.0
-446 373 1.0
-447 373 1.0
-448 373 1.0
-449 373 1.0
-450 373 1.0
-451 373 1.0
-452 373 1.0
-453 373 1.0
-454 373 1.0
-455 373 1.0
-456 373 1.0
-457 373 1.0
-458 373 1.0
-459 373 1.0
-460 373 1.0
-461 373 1.0
-462 373 1.0
-463 373 1.0
-464 373 1.0
-465 373 1.0
-466 373 1.0
-467 373 1.0
-468 373 1.0
-469 373 1.0
-470 373 1.0
-471 373 1.0
-472 373 1.0
-473 373 1.0
-474 373 1.0
-475 373 1.0
-476 373 1.0
-477 373 1.0
-478 373 1.0
-479 373 1.0
-480 373 1.0
-481 373 1.0
-482 373 1.0
-483 373 1.0
-484 373 1.0
-485 373 1.0
-486 373 1.0
-487 373 1.0
-488 373 1.0
-489 373 1.0
-490 373 1.0
-491 373 1.0
-492 373 1.0
-493 373 1.0
-494 373 1.0
-495 373 1.0
-496 373 1.0
-497 373 1.0
-498 373 1.0
-499 373 1.0
-500 373 1.0
-501 373 1.0
-502 373 1.0
-503 373 1.0
-504 373 1.0
-505 373 1.0
-506 373 1.0
-507 373 1.0
-508 373 1.0
-509 373 1.0
-510 373 1.0
-511 373 1.0
-512 373 1.0
-513 373 1.0
-514 373 1.0
-515 373 1.0
-516 373 1.0
-517 373 1.0
-518 373 1.0
-519 373 1.0
-520 373 1.0
-521 373 1.0
-522 373 1.0
-523 373 1.0
-524 373 1.0
-525 373 1.0
-526 373 1.0
-527 373 1.0
-528 373 1.0
-529 373 1.0
-530 373 1.0
-531 373 1.0
-532 373 1.0
-533 373 1.0
-534 373 1.0
-535 373 1.0
-536 373 1.0
-537 373 1.0
-538 373 1.0
-539 373 1.0
-540 373 1.0
-541 373 1.0
-542 373 1.0
-543 373 1.0
-544 373 1.0
-545 373 1.0
-546 373 1.0
-547 373 1.0
-548 373 1.0
-549 373 1.0
-550 373 1.0
-551 373 1.0
-552 373 1.0
-553 373 1.0
-554 373 1.0
-555 373 1.0
-556 373 1.0
-557 373 1.0
-558 373 1.0
-559 373 1.0
-560 373 1.0
-561 373 1.0
-562 373 1.0
-563 373 1.0
-564 373 1.0
-565 373 1.0
-566 373 1.0
-567 373 1.0
-568 373 1.0
-569 373 1.0
-570 373 1.0
-571 373 1.0
-572 373 1.0
-573 373 1.0
-574 373 1.0
-575 373 1.0
-576 373 1.0
-577 373 1.0
-578 373 1.0
-579 373 1.0
-580 373 1.0
-581 373 1.0
-582 373 1.0
-583 373 1.0
-584 373 1.0
-585 373 1.0
-586 373 1.0
-587 373 1.0
-588 373 1.0
-589 373 1.0
-590 373 1.0
-591 373 1.0
-592 373 1.0
-593 373 1.0
-594 373 1.0
-595 373 1.0
-596 373 1.0
-597 373 1.0
-598 373 1.0
-599 373 1.0
-600 373 1.0
-601 373 1.0
-602 373 1.0
-603 373 1.0
-604 373 1.0
-605 373 1.0
-606 373 1.0
-607 373 1.0
-608 373 1.0
-609 373 1.0
-610 373 1.0
-611 373 1.0
-612 373 1.0
-613 373 1.0
-614 373 1.0
+32 31 1.0
+33 31 1.0
+34 31 1.0
+35 31 1.0
+36 31 1.0
+37 31 1.0
+38 31 1.0
+39 31 1.0
+40 31 1.0
+41 31 1.0
+42 31 1.0
+43 31 1.0
+44 31 1.0
+45 31 1.0
+46 31 1.0
+47 31 1.0
+48 31 1.0
+49 31 1.0
+50 31 1.0
+51 31 1.0
+52 31 1.0
+53 31 1.0
+54 31 1.0
+55 31 1.0
+56 31 1.0
+57 31 1.0
+58 31 1.0
+59 31 1.0
+60 31 1.0
+61 31 1.0
+62 31 1.0
+63 31 1.0
+64 31 1.0
+65 31 1.0
+66 31 1.0
+67 31 1.0
+68 31 1.0
+69 31 1.0
+70 31 1.0
+71 31 1.0
+72 31 1.0
+73 31 1.0
+74 31 1.0
+75 31 1.0
+76 31 1.0
+77 31 1.0
+78 31 1.0
+79 31 1.0
+80 31 1.0
+81 31 1.0
+82 31 1.0
+83 31 1.0
+84 31 1.0
+85 31 1.0
+86 31 1.0
+87 31 1.0
+88 31 1.0
+89 31 1.0
+90 31 1.0
+91 31 1.0
+92 31 1.0
+93 31 1.0
+94 31 1.0
+95 31 1.0
+96 31 1.0
+97 31 1.0
+98 31 1.0
+99 31 1.0
+100 31 1.0
+101 31 1.0
+102 31 1.0
+103 31 1.0
+104 31 1.0
+105 31 1.0
+106 31 1.0
+107 31 1.0

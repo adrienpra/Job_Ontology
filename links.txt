@@ -1,0 +1,420 @@
+*Vertices 162
+# node_id name 162
+0 Yield_surface
+1 Equation_of_state
+2 Navier–Stokes_equations
+3 Bernoulli's_principle
+4 Capillary_action
+5 Plasticity_(physics)
+6 Elasticity_(physics)
+7 Fracture_mechanics
+8 Mohr–Coulomb_theory
+9 Von_Mises_yield_criterion
+10 Bending
+11 Transverse_isotropy
+12 Yield_(engineering)
+13 Tytus_Maksymilian_Huber
+14 Orthotropic_material
+15 J-integral
+16 Contact_mechanics
+17 Shear_strength_(soil)
+18 Huber's_equation
+19 Critical_state_soil_mechanics
+20 Hosford_yield_criterion
+21 Material_failure_theory
+22 Lode_coordinates
+23 Yu_Mao-Hong
+24 Lankford_coefficient
+25 Viscoplasticity
+26 Drucker–Prager_yield_criterion
+27 Bresler–Pister_yield_criterion
+28 Willam–Warnke_yield_criterion
+29 Interval_finite_element
+30 Structural_engineering_theory
+31 Hoek–Brown_failure_criterion
+32 Frictional_contact_mechanics
+33 Compaction_of_ceramic_powders
+34 Rock_mass_plasticity
+35 Flow_plasticity_theory
+36 Ratcheting
+37 Computational_materials_science
+38 Unified_strength_theory
+39 Bigoni–Piccolroaz_yield_criterion
+40 Strength_of_materials
+41 Structural_analysis
+42 Von_Mises
+43 Dislocation_creep
+44 Shear_strength
+45 Padeye
+46 HMH
+47 T-criterion
+48 Cauchy_stress_tensor
+49 Stress_space
+50 Hill_yield_criterion
+51 Heinrich_Hencky
+52 Christensen_failure_criterion
+53 Micro-mechanics_of_failure
+54 Load_path_analysis
+55 Stress_triaxiality
+56 3-D_elasticity
+57 Acoustic_theory
+58 Acoustics
+59 Aeroacoustics
+60 Antiplane_shear
+61 Archimedes'_principle
+62 Atmosphere
+63 Award
+64 Bending_moment
+65 Bending_of_plates
+66 Boyle's_law
+67 Bresler_Pister_yield_criterion
+68 Buoyancy
+69 Cauchy_elastic_material
+70 Charles's_law
+71 Clausius–Duhem_inequality
+72 Combined_gas_law
+73 Compact_tension_specimen
+74 Compatibility_(mechanics)
+75 Concrete
+76 Cone_(geometry)
+77 Conservation_of_energy
+78 Conservation_of_mass
+79 Continuum_mechanics
+80 Convex_polytope
+81 Creep_(deformation)
+82 Creep_and_shrinkage_of_concrete
+83 Cylinder_(geometry)
+84 Cylindrical_coordinate_system
+85 Damage_mechanics
+86 Deformation_(mechanics)
+87 Drucker_Prager
+88 Drucker_Prager_yield_criterion
+89 Drucker_stability
+90 Elasticity_of_cell_membranes
+91 Electrorheological_fluid
+92 Ellipse
+93 Eringen_Medal
+94 Failure
+95 Fatigue_(material)
+96 Ferrofluid
+97 Finite_strain_theory
+98 Fluid
+99 Fluid_dynamics
+100 Fluid_mechanics
+101 Fluid_statics
+102 Gas
+103 Gay-Lussac's_law
+104 Granular_material
+105 Hooke's_law
+106 Hugoniot_elastic_limit
+107 Hydrostatic_pressure
+108 Hyperelastic_material
+109 Hypoelastic_material
+110 ISBN_(identifier)
+111 Infinitesimal_strain_theory
+112 Johnson-Holmquist_damage_model
+113 Linear_elasticity
+114 Liquid
+115 Magnetorheological_fluid
+116 Newtonian_fluid
+117 Non-Newtonian_fluid
+118 Pascal's_law
+119 Plasma_(physics)
+120 Poiseuille_equation
+121 Prism_(geometry)
+122 Rheology
+123 Rheometer
+124 Rheometry
+125 Rigid_body_dynamics
+126 Sandwich_theory
+127 Smart_fluid
+128 Soil
+129 Solid
+130 Solid_mechanics
+131 Strain_(materials_science)
+132 Strain_tensor
+133 Stress_(physics)
+134 Stress_concentration
+135 Stress_measures
+136 Stress–energy_tensor
+137 Structural_mechanics
+138 Surface_tension
+139 Vibrations
+140 Viscoelasticity
+141 Von_Mises_stress
+142 Willam_Warnke_yield_criterion
+143 William_Prager_Medal
+144 Adhesion
+145 American_Institute_of_Steel_Construction
+146 Chromatography
+147 Cohesion_(chemistry)
+148 Conservation_of_momentum
+149 Degrees_of_freedom_(mechanics)
+150 Doi_(identifier)
+151 Ductile
+152 Engineering
+153 Fick's_law
+154 Fick's_laws_of_diffusion
+155 Graham's_law
+156 Hagen–Poiseuille_equation
+157 Hydrostatics
+158 Materials_science
+159 Metals
+160 Mixing_(process_engineering)
+161 Yield_strength
+*Arcs 254
+# source target weight
+0 103 1.0
+0 66 1.0
+0 3 1.0
+0 65 1.0
+0 64 1.0
+0 10 1.0
+0 63 1.0
+0 62 1.0
+0 61 1.0
+0 60 1.0
+0 59 1.0
+0 58 1.0
+0 67 1.0
+0 57 1.0
+0 92 1.0
+0 1 1.0
+0 93 1.0
+0 94 1.0
+0 95 1.0
+0 96 1.0
+0 97 1.0
+0 98 1.0
+0 99 1.0
+0 100 1.0
+0 101 1.0
+0 56 1.0
+0 7 1.0
+0 27 1.0
+0 4 1.0
+0 6 1.0
+0 89 1.0
+0 88 1.0
+0 87 1.0
+0 86 1.0
+0 85 1.0
+0 84 1.0
+0 83 1.0
+0 82 1.0
+0 81 1.0
+0 80 1.0
+0 68 1.0
+0 79 1.0
+0 78 1.0
+0 77 1.0
+0 76 1.0
+0 75 1.0
+0 74 1.0
+0 73 1.0
+0 72 1.0
+0 71 1.0
+0 70 1.0
+0 48 1.0
+0 69 1.0
+0 16 1.0
+0 32 1.0
+0 102 1.0
+0 104 1.0
+0 125 1.0
+0 34 1.0
+0 126 1.0
+0 127 1.0
+0 128 1.0
+0 129 1.0
+0 130 1.0
+0 131 1.0
+0 132 1.0
+0 133 1.0
+0 134 1.0
+0 124 1.0
+0 135 1.0
+0 136 1.0
+0 137 1.0
+0 138 1.0
+0 11 1.0
+0 139 1.0
+0 140 1.0
+0 25 1.0
+0 141 1.0
+0 142 1.0
+0 143 1.0
+0 12 1.0
+0 49 1.0
+0 123 1.0
+0 122 1.0
+0 121 1.0
+0 50 1.0
+0 105 1.0
+0 20 1.0
+0 106 1.0
+0 107 1.0
+0 108 1.0
+0 9 1.5
+0 109 1.0
+0 110 1.0
+0 111 1.0
+0 15 1.0
+0 112 1.0
+0 113 1.0
+0 114 1.0
+0 115 1.0
+0 21 1.0
+0 8 1.0
+0 2 1.0
+0 116 1.0
+0 117 1.0
+0 14 1.0
+0 118 1.0
+0 119 1.0
+0 5 1.0
+0 120 1.0
+0 90 1.0
+0 91 1.0
+1 0 1.0
+2 0 1.0
+3 0 1.0
+4 0 1.0
+5 9 1.0
+5 0 1.0
+6 0 1.0
+7 0 1.0
+8 0 1.0
+8 9 1.0
+9 97 1.0
+9 151 1.0
+9 98 1.0
+9 99 1.0
+9 153 1.0
+9 100 1.0
+9 96 1.0
+9 152 1.0
+9 91 1.0
+9 6 1.0
+9 154 1.0
+9 150 1.0
+9 61 1.0
+9 79 1.0
+9 16 1.0
+9 7 1.0
+9 148 1.0
+9 78 1.0
+9 77 1.0
+9 74 1.0
+9 72 1.0
+9 147 1.0
+9 71 1.0
+9 146 1.0
+9 70 1.0
+9 48 1.0
+9 149 1.0
+9 32 1.0
+9 103 1.0
+9 4 1.0
+9 117 1.0
+9 118 1.0
+9 119 1.0
+9 5 1.0
+9 122 1.0
+9 123 1.0
+9 116 1.0
+9 124 1.0
+9 130 1.0
+9 131 1.0
+9 133 1.0
+9 138 1.0
+9 13 1.0
+9 140 1.0
+9 127 1.0
+9 2 1.0
+9 8 1.0
+9 160 1.0
+9 155 1.0
+9 156 1.0
+9 51 1.0
+9 31 1.0
+9 105 1.0
+9 18 1.0
+9 157 1.0
+9 110 1.0
+9 111 1.0
+9 113 1.0
+9 114 1.0
+9 115 1.0
+9 21 1.0
+9 158 1.0
+9 159 1.0
+9 102 1.0
+9 68 1.0
+9 161 1.0
+9 3 1.0
+9 10 1.0
+9 62 1.0
+9 12 1.0
+9 145 1.0
+9 144 1.0
+9 56 1.0
+9 0 1.5
+9 66 1.0
+10 0 1.0
+11 0 1.0
+12 0 1.0
+13 9 1.0
+13 0 1.0
+14 0 1.0
+15 0 1.0
+16 0 1.0
+17 0 1.0
+18 0 1.0
+18 9 1.0
+19 0 1.0
+19 9 1.0
+20 0 1.0
+20 9 1.0
+21 0 1.0
+21 9 1.0
+22 0 1.0
+22 9 1.0
+23 9 1.0
+23 0 1.0
+24 0 1.0
+25 9 1.0
+25 0 1.0
+26 0 1.0
+26 9 1.0
+27 0 1.0
+28 0 1.0
+29 0 1.0
+30 0 1.0
+30 9 1.0
+31 0 1.0
+32 0 1.0
+33 0 1.0
+34 0 1.0
+35 0 1.0
+36 0 1.0
+37 0 1.0
+38 0 1.0
+39 0 1.0
+39 9 1.0
+40 9 1.0
+41 9 1.0
+42 9 1.0
+43 9 1.0
+44 9 1.0
+45 9 1.0
+46 9 1.0
+47 9 1.0
+48 9 1.0
+49 9 1.0
+50 9 1.0
+51 9 1.0
+52 9 1.0
+53 9 1.0
+54 9 1.0
+55 9 1.0

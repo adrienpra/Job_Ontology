@@ -3,6 +3,7 @@ import requests
 import re
 import os
 import pandas as pd
+from torch import float32
 
 class Pagelinks_bl:
     def __init__(self, title, stopwords, infoboxes):
@@ -56,7 +57,7 @@ class Pagelinks_bl:
                     Pagelinks_bl.links.append(b["title"].replace(" ", "_"))
                     print(b["title"])
 
-                    main = Page_infobox(b["title"])
+                    main = Page_infobox(b["title"].replace(" ", "_"))
                     main.main()
                     infobox = main.infobox
                     Pagelinks_bl.infobox.append(infobox)
@@ -145,7 +146,7 @@ def sort_map_input(titles, stopwords, infoboxes):
 
     return sorted_titles #took all links no filter
 
-def map_input(bltitle, iteration, stopwords, infoboxes):
+def map_input_bl(bltitle, iteration, stopwords, infoboxes):
     arc = []
     data = []
     data.append(bltitle)
@@ -189,15 +190,12 @@ def map_input(bltitle, iteration, stopwords, infoboxes):
 
 def merge_map_input(data, arcs, labels):
 
-    #data0, arc0, label0 = map_input(bltitles[0], iteration, stopwords, infoboxes)
-
     data = list(data)
     arcs = list(arcs)
     labels = list(labels)
 
     for i in range(len(data)-1):
         change = []
-        #data1, arc1, label1 = map_input(bltitle, iteration, stopwords, infoboxes)
 
         for title in data[i+1]:
             if title in data[0]:
@@ -232,7 +230,7 @@ def writeData(data, arc, labels, filename):
     f.write("# node_id name " + str(len(data)) + "\n")
 
     for i in data:
-        f.write(str(data.index(i)) + " \"{}\"".format(i) + "\n")
+        f.write(str(data.index(i)) + " {}".format(i) + "\n")
 
     f.write("*Arcs " + str(len(arc)) + "\n")
     f.write("# source target weight" + "\n")
@@ -257,7 +255,12 @@ def writeData(data, arc, labels, filename):
     source = [data[int(i)] for i in source_in]
     target = [data[int(i)] for i in target_out]
 
+    weight = list(weight)
+    weight = [str(i) for i in weight]
+    weight = tuple(weight)
+
+    
     Dic = {'source': source, 'target':target, 'weight':weight}
     df = pd.DataFrame(Dic)
-    
+
     df.to_csv(os.path.join(__location__, 'df.csv'), header=False, index=False)
