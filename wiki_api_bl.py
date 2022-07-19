@@ -259,8 +259,7 @@ def writeData(data, arc, labels, filename):
     weight = [str(i) for i in weight]
     weight = tuple(weight)
 
-    
     Dic = {'source': source, 'target':target, 'weight':weight}
     df = pd.DataFrame(Dic)
 
-    df.to_csv(os.path.join(__location__, 'df.csv'), header=False, index=False)
+    df.to_csv(os.path.join(__location__, 'df.csv'), header=False, index=False, encoding='utf-8')
