@@ -124,6 +124,14 @@ class Page_infobox:
             pass
 
 #Read file function: input:filename (1 colonne, no punct) / output array (n,1)
+def read_pajek_file(filename):  #function to be done (check shape of vars)
+    print('hello world')
+    data = []
+    arc = []
+    label = []
+    
+    return data, arc, label
+
 def read_file(filename):
     __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
@@ -218,6 +226,33 @@ def merge_map_input(data, arcs, labels):
     arcs[0] = arcs[0][arcs[0][:,0].argsort()]                                            #sort arc0 output through first column
     return data[0], arcs[0], labels[0]
 
+def weight_arc(data, arc, filename):
+    
+    file = read_file(filename)
+    x = [[line.split()[0], line.split()[1], line.split()[2]] for line in file]
+    sources, targets, weights = zip(*x) #output 3 tuples
+    
+    for i in range(len(sources)):
+        try:
+            source_idx = float(data.index(sources[i]))
+            target_idx = float(data.index(targets[i]))
+            weight_dft = 1.0
+            
+            source_idx = np.float32(source_idx)
+            target_idx = np.float32(target_idx)
+            weight_dft = np.float32(weight_dft)
+            
+            for j in range(len(arc)):
+                if ([source_idx, target_idx, weight_dft] == arc[j]).all(0):
+                    arc[j][2] = np.float(weights[i])
+                    
+            for k in range(len(arc)):
+                if ([target_idx, source_idx, weight_dft] == arc[k]).all(0):
+                    arc[k][2] = np.float(weights[i])                      
+        except:
+            pass
+    return arc
+    
 def writeData(data, arc, labels, filename):
     
     #list input infomap_online write txt
@@ -249,7 +284,7 @@ def writeData(data, arc, labels, filename):
     f2.close()
     
     #pd dataframe write csv
-    
+
     source_in, target_out, weight = zip(*arc)
 
     source = [data[int(i)] for i in source_in]

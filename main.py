@@ -4,6 +4,7 @@ from wiki_api_iw import map_input_iw
 from wiki_api_bl import merge_map_input
 from wiki_api_bl import writeData
 from wiki_api_bl import sort_map_input
+from wiki_api_bl import weight_arc
 
 import multiprocessing as mp
 from functools import partial
@@ -38,6 +39,10 @@ if __name__=="__main__":
     result = result_bl + result_iw
     data, arc, label = zip(*result)
     data, arc, label = merge_map_input(data, arc, label)
+
+    #manually weight arc
+    filename2 = 'weighted_arc.txt'
+    arc = weight_arc(data, arc, filename2)
 
     #write result
     writeData(data, arc, label, filename)
