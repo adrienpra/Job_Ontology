@@ -5,6 +5,8 @@ import os
 import pandas as pd
 from torch import float32
 
+import networkx as nx
+
 class Pagelinks_bl:
     def __init__(self, title, stopwords, infoboxes):
         self.URL = "https://en.wikipedia.org/w/api.php"
@@ -125,12 +127,25 @@ class Page_infobox:
 
 #Read file function: input:filename (1 colonne, no punct) / output array (n,1)
 def read_pajek_file(filename):  #function to be done (check shape of vars)
-    print('hello world')
-    data = []
-    arc = []
-    label = []
     
-    return data, arc, label
+    G = nx.read_pajek(filename, encoding='utf-8')
+    df = nx.to_pandas_edgelist(G)
+
+    data2 = list(df['source']) + list(df['target'])
+    data = list(set(data2))
+
+    arc= []
+
+    for i in range(len(df)):
+        arc.append([data.index(df.iloc[i][0]), data.index(df.iloc[i][1]), df.iloc[i][2]])
+
+    label = []
+    for i in range(len(data)):
+        label.append('')
+
+    data = [i.replace("%27", "'") for i in data]
+
+    return data, np.array(arc).astype(np.float32), label
 
 def read_file(filename):
     __location__ = os.path.realpath(
@@ -254,9 +269,9 @@ def weight_arc(data, arc, filename):
     return arc
     
 def writeData(data, arc, labels, filename):
-    
+
     #list input infomap_online write txt
-    
+
     __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 

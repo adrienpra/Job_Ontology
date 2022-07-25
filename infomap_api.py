@@ -14,7 +14,13 @@ def read_df(filename):
                     names=['source', 'target', 'weight'], 
                     encoding="utf-8")
     df['weight'] = df['weight'].astype(str)
+    
+    for i in df['source']:
+        df['source'] = df['source'].replace(i, i.replace("'", '%27'))
 
+    for i in df['target']:
+        df['target'] = df['target'].replace(i, i.replace("'", '%27'))
+        
     return df
 
 def create_nx(df):

@@ -5,6 +5,7 @@ from wiki_api_bl import merge_map_input
 from wiki_api_bl import writeData
 from wiki_api_bl import sort_map_input
 from wiki_api_bl import weight_arc
+from wiki_api_bl import read_pajek_file
 
 import multiprocessing as mp
 from functools import partial
@@ -19,7 +20,10 @@ filename = "links.txt"
 
 if __name__=="__main__":
     tps_start = time.time()
-
+    
+    #read_pajek_file
+    """data, arc, label = read_pajek_file('input.net')"""
+    
     #get inputs
     stopwords = read_file("stopwords.txt")
     infoboxes = read_file("infoboxes.txt")
@@ -46,6 +50,6 @@ if __name__=="__main__":
 
     #write result
     writeData(data, arc, label, filename)
-
+    
     tps_end = time.time()
     print("tps =", tps_end - tps_start)
