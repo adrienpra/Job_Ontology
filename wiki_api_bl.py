@@ -3,7 +3,6 @@ import requests
 import re
 import os
 import pandas as pd
-from torch import float32
 
 import networkx as nx
 
@@ -29,7 +28,6 @@ class Pagelinks_bl:
         Pagelinks_bl.readData()
         Pagelinks_bl.getLinks()
         Pagelinks_bl.getData()
-        #time.sleep(t) -> no need here
 
     def readData(Pagelinks_bl):
         S = requests.Session()
@@ -288,7 +286,6 @@ def writeData(data, arc, labels, filename):
     for i in range(len(arc)-1):
         f.write(str(arc[i][0].astype(np.int32)) + " " + str(arc[i][1].astype(np.int32)) + " " + str(arc[i][2]) + "\n")      #need to convert arc[0] and [1] to int 'cause nodes
     f.write(str(arc[-1][0].astype(np.int32)) + " " + str(arc[-1][1].astype(np.int32)) + " " + str(arc[-1][2]))
-
     f.close()
 
     #list lables write txt
